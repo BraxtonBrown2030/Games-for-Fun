@@ -31,7 +31,7 @@ public class Player_Controller : MonoBehaviour
     
     }
 
-    void Attack()
+    public void Attack()
     {
         
     }
