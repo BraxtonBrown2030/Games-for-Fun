@@ -18,7 +18,7 @@ public class Testing : MonoBehaviour
     void Start()
     {
         
-       attack = gameObject.GetComponent<Player_Controller>().Attack();
+       gameObject.GetComponent<Player_Controller>().Attack();
 
     foreach(int numbers in numbers)
     {
@@ -27,6 +27,7 @@ public class Testing : MonoBehaviour
 
     }
 
+        player_Controller.Attack();
     
         
     }
@@ -34,14 +35,14 @@ public class Testing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+
+    }
+
+    void danamge(Collision collision)
+    {
         
-
-        if()
-        {
-
-
-        }
-
 
     }
 }
