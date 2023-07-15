@@ -57,9 +57,13 @@ public class Slide_Enemy : MonoBehaviour
 
         if(other.tag == "Lazer")
         {
+            _Health -= 1;
+
+        if(_Health == 0)
+         {
             Destroy(other.gameObject);
             Destroy(this.gameObject);
-          
+         } 
         }
     }
 
