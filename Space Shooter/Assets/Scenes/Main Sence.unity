@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b846a8e8b6b89d745b73f683310fe3b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Health: 0
+  _Health: 3
   _Speed: 5
   attackSpeed: -0.5
   lastAttackTime: 0.3
@@ -743,7 +743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4443764743862327721, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.07
+      value: 2.03
       objectReference: {fileID: 0}
     - target: {fileID: 4443764743862327721, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}
       propertyPath: m_LocalPosition.z

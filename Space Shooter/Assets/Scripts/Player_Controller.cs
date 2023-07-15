@@ -6,7 +6,7 @@ using UnityEngine;
 public class Player_Controller : MonoBehaviour
 {
 [Header("Health")]
-public int _Health;
+public int _Health = 3;
 
 [Header("Movment")]
 public float _Speed;
@@ -15,7 +15,7 @@ public float _Speed;
 [SerializeField] private float attackSpeed = -0.5f;
 [SerializeField] private float lastAttackTime = 0.3f;
 public int _Damage;
-[SerializeField] GameObject lazer;
+[SerializeField] GameObject laser;
 public GameObject[] _player;
 
 
@@ -83,6 +83,8 @@ public GameObject[] _player;
         attackSpeed = Time.time + lastAttackTime;
 
         Debug.Log("working");
+
+        Instantiate(laser, transform.position + new Vector3(0,0.8f,0), Quaternion.identity);
 
     }
 }

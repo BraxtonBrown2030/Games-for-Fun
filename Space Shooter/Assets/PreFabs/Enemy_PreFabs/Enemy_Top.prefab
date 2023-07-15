@@ -108,6 +108,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4652b6e5fb9af6449bce5fa8d8790ddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
-  _StopDistance: 0
-  _Speed: 0
+  health: 1
+  _StopDistance: 5
+  _Speed: 1
+  _Laser: {fileID: 330365572931792624, guid: 828848a42e0a978438e138da04a5331f, type: 3}
+  _Attackspeed: -1
+  _LastAttackTime: 1

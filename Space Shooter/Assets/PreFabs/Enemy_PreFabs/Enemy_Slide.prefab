@@ -108,4 +108,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb1d2f0fe1fe7d949b3c51272ad36b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Lazer: {fileID: 0}
+  _Lazer: {fileID: 2234266866617771003, guid: 50200ed355d71cc4aabd9d72d8caf0b1, type: 3}
