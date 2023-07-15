@@ -11,6 +11,9 @@ public class Top_Enemy : MonoBehaviour
     private Transform player;
     public float _StopDistance = 7;
     public float _Speed = 2;
+    public GameObject _Laser;
+    public float _Attackspeed = -1f;
+    public float _LastAttackTime = 1f;
 
     void Start()
     {
@@ -34,6 +37,22 @@ public class Top_Enemy : MonoBehaviour
             transform.position = new Vector3(transform.position.x,5.5f,0);
 
         }
+
+        if( Time.time >= _Attackspeed)
+        {
+
+            Attack();
+
+        }
+
+    }
+
+    void Attack()
+    {
+
+        _Attackspeed = Time.time + _LastAttackTime;
+
+        Instantiate(_Laser, transform.position + new Vector3(0,-0.8f,0), Quaternion.identity);
 
     }
 }

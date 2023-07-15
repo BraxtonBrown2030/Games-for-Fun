@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Laser_Slide : MonoBehaviour
+public class Laser_Top : MonoBehaviour
 {
     [SerializeField] private float _LaserSpeed = 1.3f;
         void Start()
