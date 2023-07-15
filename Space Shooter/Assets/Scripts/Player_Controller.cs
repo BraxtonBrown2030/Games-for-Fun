@@ -16,8 +16,9 @@ public float _Speed;
 [SerializeField] private float lastAttackTime = 0.3f;
 public int _Damage;
 [SerializeField] GameObject laser;
+[SerializeField] GameObject tripleShot;
 public GameObject[] _player;
-
+private bool istrippleshot = true;
 
     void Start()
     {
