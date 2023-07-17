@@ -86,4 +86,17 @@ private bool istrippleshot = true;
         Instantiate(laser, transform.position + new Vector3(0,0.8f,0), Quaternion.identity);
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+
+        if(other.tag == "Enemy_Laser")
+        {
+
+            Destroy(other.gameObject);
+
+        }
+
+
+    }
 }

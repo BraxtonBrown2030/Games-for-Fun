@@ -32,7 +32,7 @@ public class Laser_Top : MonoBehaviour
         {
 
             player.TakeDamage();
-            Destroy(this.gameObject);
+            Destroy(gameObject);
 
         }
 

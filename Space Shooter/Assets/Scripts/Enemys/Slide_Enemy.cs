@@ -16,6 +16,7 @@ public class Slide_Enemy : MonoBehaviour
 
     [Header("Scripts")]
     Spawn_Manager spawn_Manager;
+    private Player_Controller playerscript;
 
     [Header("GameObjects")]
     [SerializeField] private GameObject _Lazer;
@@ -23,6 +24,8 @@ public class Slide_Enemy : MonoBehaviour
     void Start()
     {
         
+        playerscript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
+
     }
 
     void Update()
@@ -34,6 +37,15 @@ public class Slide_Enemy : MonoBehaviour
         {
 
             Attack();
+
+        }
+
+        if(playerscript._Health <= 0)
+        {
+
+            Debug.Log("Game end Destroy(Slide)");
+
+            Destroy(this.gameObject);
 
         }
 

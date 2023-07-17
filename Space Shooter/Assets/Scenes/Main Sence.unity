@@ -123,27 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &269614778 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4443764743862327381, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}
-  m_PrefabInstance: {fileID: 4443764745167095978}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &269614784
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269614778}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &367818929
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,7 +171,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367818929}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -353,27 +332,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &763436946 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1495235191835762096, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
-  m_PrefabInstance: {fileID: 1495235191299655698}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &763436952
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 763436946}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,27 +415,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1779576557 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4162495394070062366, guid: d7db2beceeacb0943bf5ed496f49b5c6, type: 3}
-  m_PrefabInstance: {fileID: 4162495392836639409}
-  m_PrefabAsset: {fileID: 0}
---- !u!54 &1779576563
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779576557}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1833795407
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,10 +592,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Top
       objectReference: {fileID: 0}
-    - target: {fileID: 1495235191835762097, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1495235191835762100, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -702,6 +635,14 @@ PrefabInstance:
     - target: {fileID: 1495235191835762100, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5584008645877407343, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
+      propertyPath: _Speed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5584008645877407343, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
+      propertyPath: _StopDistance
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
@@ -873,10 +814,6 @@ PrefabInstance:
     - target: {fileID: 4443764743862327721, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4443764743862327722, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}

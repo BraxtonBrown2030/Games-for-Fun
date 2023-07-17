@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Laser_Slide : MonoBehaviour
 {
-    [SerializeField] private float _LaserSpeed = 1.3f;
+    [SerializeField] private float _LaserSpeed = 2f;
         void Start()
     {
         

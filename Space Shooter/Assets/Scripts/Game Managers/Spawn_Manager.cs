@@ -30,28 +30,6 @@ public class Spawn_Manager : MonoBehaviour
     void Update()
     {
 
-        /*
-        if(_Player._Health >= 0)
-        {
-
-            if (Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Enemy").Length < maxNumberOfEmenys)
-            {
-            _SpawnTimer = Time.time + _SpawnSpeed;
-
-            Instantiate(_FallEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
-
-             }
-
-            if(Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Slide_enemy").Length < maxSlide)
-             {
-            _SpawnTimer = Time.time + _SpawnSpeed;
-
-            Instantiate(_SlideEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
-             }
-
-        }
-        */
-
         if(_Player != null)
         {
          if (Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Enemy").Length < maxNumberOfEmenys)
@@ -78,25 +56,6 @@ public class Spawn_Manager : MonoBehaviour
             maxtop= 0;
 
         }
-
-
-        /*
-        if (Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Enemy").Length < maxNumberOfEmenys)
-        {
-            _SpawnTimer = Time.time + _SpawnSpeed;
-
-            Instantiate(_FallEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
-
-        }
-
-        if(Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Slide_enemy").Length < maxSlide)
-        {
-            _SpawnTimer = Time.time + _SpawnSpeed;
-
-            Instantiate(_SlideEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
-        }
-    
-        */
 
     }
 }
