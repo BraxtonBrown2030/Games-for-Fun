@@ -9,6 +9,7 @@ public class Top_Enemy : MonoBehaviour
     public float health;
     
     private Transform player;
+    private Player_Controller playerscript;
     public float _StopDistance = 7;
     public float _Speed = 2;
     public GameObject _Laser;
@@ -19,6 +20,7 @@ public class Top_Enemy : MonoBehaviour
     {
         
     player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+    playerscript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
 
     }
 
@@ -42,6 +44,14 @@ public class Top_Enemy : MonoBehaviour
         {
 
             Attack();
+
+        }
+
+        if(playerscript._Health <= 0) // testing 7/16/2023
+        {
+
+            Debug.Log("Game end Destoy(top)");
+            Destroy(this.gameObject);
 
         }
 
@@ -83,4 +93,5 @@ public class Top_Enemy : MonoBehaviour
 
 
     }
+    
 }

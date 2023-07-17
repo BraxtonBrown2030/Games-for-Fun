@@ -32,6 +32,7 @@ public class Laser_Slide : MonoBehaviour
         {
 
             player.TakeDamage();
+            Destroy(this.gameObject);
 
         }
 

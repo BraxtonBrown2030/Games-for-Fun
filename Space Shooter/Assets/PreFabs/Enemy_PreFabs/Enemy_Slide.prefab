@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4443764743862327723}
   - component: {fileID: 4443764743862327722}
   - component: {fileID: 1167691837355351879}
+  - component: {fileID: 269614784}
   m_Layer: 0
   m_Name: Enemy_Slide
   m_TagString: Slide_enemy
@@ -91,7 +92,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4443764743862327381}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -109,3 +110,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Lazer: {fileID: 2234266866617771003, guid: 50200ed355d71cc4aabd9d72d8caf0b1, type: 3}
+--- !u!54 &269614784
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4443764743862327381}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

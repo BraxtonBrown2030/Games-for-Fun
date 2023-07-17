@@ -20,17 +20,28 @@ public class Fall_Enemy : MonoBehaviour
     [Header("Game_Objects")]
     public GameObject _LootDrops;
     public GameObject _TopEnemy;
+    private Player_Controller playerscript;
 
 
     void Start()
     {
         
+     playerscript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
+
     }
 
     void Update()
     {
 
         Movement();
+
+       if(playerscript._Health <= 0) // testing 7/16/2023
+        {
+
+            Debug.Log("Game end Destoy(fall)");
+            Destroy(this.gameObject);
+
+        }
 
     }
 

@@ -83,8 +83,6 @@ private bool istrippleshot = true;
     {
         attackSpeed = Time.time + lastAttackTime;
 
-        Debug.Log("working");
-
         Instantiate(laser, transform.position + new Vector3(0,0.8f,0), Quaternion.identity);
 
     }
