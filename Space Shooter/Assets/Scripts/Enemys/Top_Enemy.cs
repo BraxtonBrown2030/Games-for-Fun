@@ -55,4 +55,32 @@ public class Top_Enemy : MonoBehaviour
         Instantiate(_Laser, transform.position + new Vector3(0,-0.8f,0), Quaternion.identity);
 
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+;
+
+        if(other.tag == "Player")
+        {
+            Player_Controller player = other.transform.GetComponent<Player_Controller>();
+
+            if(player != null)
+            {
+                player.TakeDamage();
+            }
+
+            Destroy(this.gameObject);
+
+        }
+
+        if(other.tag == "Laser")
+        {
+
+            Destroy(other.gameObject);
+            Destroy(this.gameObject);
+
+        }
+
+
+    }
 }

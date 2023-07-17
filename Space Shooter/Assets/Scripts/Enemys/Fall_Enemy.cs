@@ -54,8 +54,6 @@ public class Fall_Enemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        Debug.Log("HIT:  " + other.transform.name);
-
         if(other.tag == "Player")
         {
             Player_Controller player = other.transform.GetComponent<Player_Controller>();
@@ -65,9 +63,11 @@ public class Fall_Enemy : MonoBehaviour
                 player.TakeDamage();
             }
 
+            Destroy(this.gameObject);
+
         }
 
-        if(other.tag == "Lazer")
+        if(other.tag == "Laser")
         {
 
             Destroy(other.gameObject);

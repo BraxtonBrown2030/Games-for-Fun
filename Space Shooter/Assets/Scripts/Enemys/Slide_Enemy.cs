@@ -55,7 +55,7 @@ public class Slide_Enemy : MonoBehaviour
 
         }
 
-        if(other.tag == "Lazer")
+        if(other.tag == "Laser")
         {
             _Health -= 1;
 
