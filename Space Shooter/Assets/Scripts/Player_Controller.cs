@@ -115,6 +115,13 @@ private bool istrippleshot = false;
 
         }
 
+        if(other.tag == "Health_Power")
+        {
+
+            _Health += 1;
+            Destroy(other.gameObject);
+        }
+
 
     }
 }
