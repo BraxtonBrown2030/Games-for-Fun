@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using TMPro;
 using UnityEngine;
 
 public class Player_Controller : MonoBehaviour
@@ -18,7 +19,10 @@ public int _Damage;
 [SerializeField] GameObject laser;
 [SerializeField] GameObject tripleShot;
 public GameObject[] _player;
-private bool istrippleshot = true;
+private bool istrippleshot = false;
+[SerializeField]private float tsCooldown = -0.5f;
+[SerializeField]private float lastTSpower = 0.3f;
+
 
     void Start()
     {
@@ -85,6 +89,8 @@ private bool istrippleshot = true;
 
         Instantiate(laser, transform.position + new Vector3(0,0.8f,0), Quaternion.identity);
 
+        Instantiate(tripleShot, transform.position + new Vector3(0,1.3f,0), Quaternion.identity);
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -94,6 +100,18 @@ private bool istrippleshot = true;
         {
 
             Destroy(other.gameObject);
+
+        }
+
+        if(other.tag == "Tripple_Power" && Time.time > tsCooldown)
+        {
+
+            tsCooldown = Time.time + lastTSpower;
+
+            istrippleshot = true;
+
+            yield return new WaitForSeconds(1);
+            istrippleshot = false;
 
         }
 
