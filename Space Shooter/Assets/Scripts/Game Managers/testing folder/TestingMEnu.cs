@@ -1,36 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
-using TMPro.EditorUtilities;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Main_Menu : MonoBehaviour
+[CreateAssetMenu]
+public class TestingMEnu : ScriptableObject
 {
 
     public bool mainSettings = false;
     public bool gameSettings = false;
 
-    public int _Gamescene = 1;
     public int _Settings = 2;
+    public int _Gamescene = 1;
     public int _MainMenu = 0;
-
-    public void StartGame()
-    {
-
-        SceneManager.LoadScene(_Gamescene);
-        Debug.Log("Load working");
-
-    }
-
-    public void Quit()
-    {
-
-        Application.Quit();
-        Debug.Log("Game Quit");
-
-    }
 
     public void SettingsGame()
     {
@@ -47,15 +29,7 @@ public class Main_Menu : MonoBehaviour
         mainSettings = true;
 
     }
-
-    public void MainMenu()
-    {
-
-        SceneManager.LoadScene(_MainMenu);
-
-    }
-
-    public void Return()
+        public void Return()
     {
 
         if(gameSettings == true)
@@ -74,5 +48,4 @@ public class Main_Menu : MonoBehaviour
         }      
 
     }
-
 }

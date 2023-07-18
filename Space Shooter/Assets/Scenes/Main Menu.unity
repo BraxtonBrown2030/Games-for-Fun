@@ -579,6 +579,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6778e79e4156374478b7a40665a8e04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainSettings: 0
+  gameSettings: 0
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -967,6 +969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6778e79e4156374478b7a40665a8e04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainSettings: 0
+  gameSettings: 0
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -1199,6 +1203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6778e79e4156374478b7a40665a8e04f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainSettings: 0
+  gameSettings: 0
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -1248,7 +1254,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1819497453}
         m_TargetAssemblyTypeName: Main_Menu, Assembly-CSharp
-        m_MethodName: Settings
+        m_MethodName: SettignsMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

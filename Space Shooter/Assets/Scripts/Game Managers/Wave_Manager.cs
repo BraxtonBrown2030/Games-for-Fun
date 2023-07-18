@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Return_Buttion : MonoBehaviour
+public class Wave_Manager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+    public float wavecount;
+
     void Start()
     {
         
@@ -15,14 +16,5 @@ public class Return_Buttion : MonoBehaviour
     void Update()
     {
         
-
     }
-
-    public void Return()
-    {
-
-        
-
-    }
-
 }

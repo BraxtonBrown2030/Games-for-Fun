@@ -16,7 +16,7 @@ public class Menu_Managers : MonoBehaviour
 
     }
 
-    void Update()
+   public void Update()
     {
         
         if(_Player != null)
