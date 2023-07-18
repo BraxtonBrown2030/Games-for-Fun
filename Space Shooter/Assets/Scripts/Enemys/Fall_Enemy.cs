@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Fall_Enemy : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class Fall_Enemy : MonoBehaviour
     public GameObject _LootDrops;
     public GameObject _TopEnemy;
     private Player_Controller playerscript;
-
+    public Score_Manager _ScoreManager;
 
     void Start()
     {
