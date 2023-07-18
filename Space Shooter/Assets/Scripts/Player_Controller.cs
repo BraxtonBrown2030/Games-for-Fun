@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Controller : MonoBehaviour
 {
@@ -49,6 +50,7 @@ private bool istrippleshot = false;
         if(_Health < 1)
         {
             Destroy(this.gameObject);
+            
         }
 
     }
@@ -127,7 +129,7 @@ private bool istrippleshot = false;
         if(other.tag == "Health_Power")
         {
 
-            _Health += 1;
+            _Health += 2;
             Destroy(other.gameObject);
         }
 
