@@ -51,7 +51,7 @@ public class Top_Enemy : MonoBehaviour
         {
 
             Debug.Log("Game end Destoy(top)");
-            Destroy(this.gameObject);
+            Destroy(gameObject);
 
         }
 

@@ -50,7 +50,7 @@ private bool istrippleshot = false;
         if(_Health < 1)
         {
             Destroy(this.gameObject);
-            
+
         }
 
     }

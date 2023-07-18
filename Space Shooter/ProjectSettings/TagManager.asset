@@ -11,6 +11,7 @@ TagManager:
   - Enemy_Laser
   - Tripple_Power
   - Health_Power
+  - Speed_Power
   layers:
   - Default
   - TransparentFX
