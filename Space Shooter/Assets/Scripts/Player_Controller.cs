@@ -23,7 +23,6 @@ private bool istrippleshot = false;
 [SerializeField]private float tsCooldown = -0.5f;
 [SerializeField]private float lastTSpower = 0.3f;
 
-
     void Start()
     {
         
@@ -87,9 +86,20 @@ private bool istrippleshot = false;
     {
         attackSpeed = Time.time + lastAttackTime;
 
-        Instantiate(laser, transform.position + new Vector3(0,0.8f,0), Quaternion.identity);
 
-        Instantiate(tripleShot, transform.position + new Vector3(0,1.3f,0), Quaternion.identity);
+        if(istrippleshot == false)
+        {
+
+         Instantiate(laser, transform.position + new Vector3(0,0.8f,0), Quaternion.identity);
+
+        }
+        else if(istrippleshot == true)
+        {
+
+         Instantiate(tripleShot, transform.position + new Vector3(0,1.3f,0), Quaternion.identity);
+         
+
+        }
 
     }
 
@@ -107,11 +117,10 @@ private bool istrippleshot = false;
         {
 
             tsCooldown = Time.time + lastTSpower;
-
             istrippleshot = true;
-
-            yield return new WaitForSeconds(1);
-            istrippleshot = false;
+            StartCoroutine(TripleShotCooldownRun());
+            Destroy(other.gameObject);
+            
 
         }
 
@@ -122,6 +131,33 @@ private bool istrippleshot = false;
             Destroy(other.gameObject);
         }
 
+        if(other.tag == "Speed_Power")
+        {
+
+            _Speed = 7;
+            StartCoroutine(SpeedPowerActive());
+            Destroy(other.gameObject);
+
+        }
+
 
     }
+    
+
+    IEnumerator TripleShotCooldownRun()
+    {
+
+        yield return new WaitForSeconds(5.0f);
+        istrippleshot = false;
+
+    }
+
+    IEnumerator SpeedPowerActive()
+    {
+
+        yield return new WaitForSeconds(5.0f);
+        _Speed = 5;
+
+    }
+
 }

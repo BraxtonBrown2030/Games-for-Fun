@@ -9,6 +9,8 @@ TagManager:
   - Top_Enemy
   - Laser
   - Enemy_Laser
+  - Tripple_Power
+  - Health_Power
   layers:
   - Default
   - TransparentFX
