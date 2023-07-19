@@ -16,10 +16,10 @@ public class Main_Menu : MonoBehaviour
     public int _Settings = 2;
     public int _MainMenu = 0;
 
-    public void StartGame()
+    public void StartGame(int amount)
     {
 
-        SceneManager.LoadScene(_Gamescene);
+        SceneManager.LoadScene(amount);
         Debug.Log("Load working");
 
     }
