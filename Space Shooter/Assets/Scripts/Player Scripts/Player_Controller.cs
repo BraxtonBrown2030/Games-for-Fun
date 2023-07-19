@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Threading;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player_Controller : MonoBehaviour
 {
@@ -24,6 +27,13 @@ private bool istrippleshot = false;
 [SerializeField]private float tsCooldown = -0.5f;
 [SerializeField]private float lastTSpower = 0.3f;
 
+
+public Slider slider;
+
+
+public int shotcooldown = 7;
+
+
     void Start()
     {
         
@@ -40,6 +50,8 @@ private bool istrippleshot = false;
         {
             Attack();
         }
+
+        
     }
 
     public void TakeDamage()
@@ -146,7 +158,7 @@ private bool istrippleshot = false;
     }
     
 
-    IEnumerator TripleShotCooldownRun()
+    public IEnumerator TripleShotCooldownRun()
     {
 
         yield return new WaitForSeconds(7.0f);
@@ -159,6 +171,18 @@ private bool istrippleshot = false;
 
         yield return new WaitForSeconds(5.0f);
         _Speed = 5;
+
+    }
+
+    public void Poweupdown()
+    {
+
+        if(istrippleshot == true)
+        {
+
+            slider.value = -1.0f;            
+            Debug.Log("countdown start");
+        }
 
     }
 

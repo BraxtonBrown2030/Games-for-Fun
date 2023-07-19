@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +25,7 @@ public class TImers : MonoBehaviour
     public void SetPowerTimer()
     {
 
-        powerslider.value = _player._Health; 
+        
 
     }
 
