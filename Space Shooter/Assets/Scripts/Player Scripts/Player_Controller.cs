@@ -149,7 +149,7 @@ private bool istrippleshot = false;
     IEnumerator TripleShotCooldownRun()
     {
 
-        yield return new WaitForSeconds(5.0f);
+        yield return new WaitForSeconds(7.0f);
         istrippleshot = false;
 
     }

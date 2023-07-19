@@ -12,6 +12,7 @@ TagManager:
   - Tripple_Power
   - Health_Power
   - Speed_Power
+  - Pause Menu
   layers:
   - Default
   - TransparentFX
