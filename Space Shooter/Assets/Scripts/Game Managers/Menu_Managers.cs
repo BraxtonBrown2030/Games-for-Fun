@@ -14,11 +14,6 @@ public class Menu_Managers : MonoBehaviour
         
         _Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
 
-    }
-
-   public void Update()
-    {
-        
         if(_Player != null)
         {
             
@@ -26,7 +21,14 @@ public class Menu_Managers : MonoBehaviour
             _IsPauseMenu = false;
 
         }
-        else if(_Player._Health <= 0)
+
+
+    }
+
+   public void Update()
+    {
+        
+        if(_Player._Health <= 0)
         {
 
             GetComponent<Canvas>().enabled = true;
