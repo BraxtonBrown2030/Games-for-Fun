@@ -28,6 +28,9 @@ public class Top_Enemy : MonoBehaviour
     void Update()
     {
         
+
+       if(player != null)
+       { 
         if(Vector3.Distance(transform.position, player.position) > _StopDistance) // fllowing
         {
             transform.position = Vector3.MoveTowards(transform.position, player.position, _Speed * Time.deltaTime);
@@ -46,7 +49,7 @@ public class Top_Enemy : MonoBehaviour
             Attack();
 
         }
-
+       }
         if(playerscript._Health <= 0) // testing 7/16/2023
         {
 
@@ -54,7 +57,7 @@ public class Top_Enemy : MonoBehaviour
             Destroy(gameObject);
 
         }
-
+       
     }
 
     void Attack()

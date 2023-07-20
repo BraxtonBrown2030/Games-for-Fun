@@ -852,18 +852,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3505134886595196904, guid: 4a517ae8695957747a99c8a3b21a7c9a, type: 3}
   m_PrefabInstance: {fileID: 3505134887576469370}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &428335717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428335716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e04660add0582cb4e82caf6512103cda, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &473534401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1196,18 +1184,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7755691479392065460, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
   m_PrefabInstance: {fileID: 7755691480704357119}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &515712939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515712938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ffead1fce78a924cbfa643fb2098afc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519042719
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,15 +2123,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _SpawnTimer: 1
-  _SpawnSpeed: 1
-  _HealthPower: {fileID: 0}
-  _SpeedPower: {fileID: 0}
-  _TriplePower: {fileID: 0}
+  _SpawnSpeed: 10
+  _HealthPower: {fileID: 1216088028}
+  _SpeedPower: {fileID: 428335716}
+  _TriplePower: {fileID: 515712938}
   _Powerups:
   - {fileID: 7755691479392065460, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
   - {fileID: 3505134886595196904, guid: 4a517ae8695957747a99c8a3b21a7c9a, type: 3}
   - {fileID: 3112327987666319005, guid: 3018bebb2e23de54bb4a4f4cafdc2a38, type: 3}
-  numberOfPowerUps: 2
+  numberOfPowerUps: 4
+  _allpowerups: 4
 --- !u!4 &1160504702
 Transform:
   m_ObjectHideFlags: 0
@@ -2175,18 +2152,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3112327987666319005, guid: 3018bebb2e23de54bb4a4f4cafdc2a38, type: 3}
   m_PrefabInstance: {fileID: 3112327987808862620}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1216088029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216088028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e08dd5374f68cc4c8759d46a71b3cc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1252489545
 GameObject:
   m_ObjectHideFlags: 0
@@ -4196,6 +4161,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7952685796279378607, guid: 828848a42e0a978438e138da04a5331f, type: 3}
+      propertyPath: _LaserSpeed
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 828848a42e0a978438e138da04a5331f, type: 3}
 --- !u!1001 &1495235191299655698
@@ -4318,6 +4287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser_Slide
       objectReference: {fileID: 0}
+    - target: {fileID: 7147607548941501955, guid: 50200ed355d71cc4aabd9d72d8caf0b1, type: 3}
+      propertyPath: _LaserSpeed
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50200ed355d71cc4aabd9d72d8caf0b1, type: 3}
 --- !u!1001 &3112327987808862620
@@ -4394,7 +4367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3505134886595196908, guid: 4a517ae8695957747a99c8a3b21a7c9a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.61
+      value: 8.41
       objectReference: {fileID: 0}
     - target: {fileID: 3505134886595196908, guid: 4a517ae8695957747a99c8a3b21a7c9a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4561,11 +4534,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7755691479392065455, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.2
+      value: 8.45
       objectReference: {fileID: 0}
     - target: {fileID: 7755691479392065455, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.11
+      value: 3.68
       objectReference: {fileID: 0}
     - target: {fileID: 7755691479392065455, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
       propertyPath: m_LocalPosition.z
