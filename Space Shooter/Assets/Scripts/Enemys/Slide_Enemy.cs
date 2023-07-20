@@ -43,7 +43,6 @@ public class Slide_Enemy : MonoBehaviour
         if(playerscript._Health <= 0)
         {
 
-            Debug.Log("Game end Destroy(Slide)");
 
             Destroy(this.gameObject);
 
@@ -69,14 +68,11 @@ public class Slide_Enemy : MonoBehaviour
 
         if(other.tag == "Laser")
         {
-            _Health -= 1;
-
-        if(_Health == 0)
-         {
+         
             Destroy(other.gameObject);
             Destroy(this.gameObject);
-         } 
-        }
+        } 
+        
     }
 
     void Slide_Movement()

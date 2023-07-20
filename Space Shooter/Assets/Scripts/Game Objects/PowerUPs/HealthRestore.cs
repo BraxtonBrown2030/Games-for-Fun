@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Dynamic;
 using UnityEngine;
 
 public class HealthRestore : MonoBehaviour
 {
-
-    public GameObject[] store_powerups;
 
     void Start()
     {
@@ -15,11 +14,10 @@ public class HealthRestore : MonoBehaviour
     void Update()
     {
         
-        if(transform.position.y <= 6.5 && transform.position.x <= -10)
+        if(transform.position.y <= 6.5)
         {
-            int powerups = Random.Range(0,store_powerups.Length);
 
-            transform.position = new Vector3 store_powerups[powerups];
+            Destroy(gameObject);
 
         }
 

@@ -39,7 +39,6 @@ public class Fall_Enemy : MonoBehaviour
        if(playerscript._Health <= 0) // testing 7/16/2023
         {
 
-            Debug.Log("Game end Destoy(fall)");
             Destroy(this.gameObject);
 
         }

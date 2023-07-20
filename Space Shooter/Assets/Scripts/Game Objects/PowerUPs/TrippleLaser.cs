@@ -13,6 +13,12 @@ public class TrippleLaser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+                if(transform.position.y <= 6.5)
+        {
+
+            Destroy(gameObject);
+
+        }
+
     }
 }

@@ -14,5 +14,13 @@ public class Speed_Boost : MonoBehaviour
     void Update()
     {
         
+         if(transform.position.y <= 6.5)
+        {
+
+            Destroy(gameObject);
+
+        }
+
+
     }
 }

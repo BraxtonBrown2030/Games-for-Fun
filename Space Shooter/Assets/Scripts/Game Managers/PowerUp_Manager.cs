@@ -6,7 +6,7 @@ public class PowerUp_Manager : MonoBehaviour
 {
 [Header("Spawn timers")]
 [SerializeField] private float _SpawnTimer = 1f;
-[SerializeField] private float _SpawnSpeed = 1f;
+[SerializeField] private float _SpawnSpeed = 10f;
 
 [Header("Game objects")]
 [SerializeField] private GameObject _HealthPower;
@@ -34,7 +34,7 @@ private Player_Controller _Player;
         if(_Player != null)
         {
 
-            if(Time.time > _SpawnTimer && _Powerups.Length < numberOfPowerUps)
+            if(Time.time > _SpawnTimer)
             {
                 int powerIndex = Random.Range(0,_Powerups.Length);
 
