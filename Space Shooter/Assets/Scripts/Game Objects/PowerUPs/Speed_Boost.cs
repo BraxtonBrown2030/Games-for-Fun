@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Speed_Boost : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public float movepseed;
+
     void Start()
     {
         
@@ -14,13 +16,14 @@ public class Speed_Boost : MonoBehaviour
     void Update()
     {
         
-         if(transform.position.y <= 6.5)
+        if(transform.position.y <= 6.5)
         {
 
             Destroy(gameObject);
 
         }
 
+        transform.Translate(Vector3.down * Time.deltaTime * movepseed);
 
     }
 }

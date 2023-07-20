@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class TrippleLaser : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+    public float moveSpeed;
+
     void Start()
     {
         
@@ -13,12 +15,14 @@ public class TrippleLaser : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-                if(transform.position.y <= 6.5)
+        if(transform.position.y <= 6.5)
         {
 
             Destroy(gameObject);
 
         }
+
+        transform.Translate(Vector3.down * Time.deltaTime * moveSpeed);
 
     }
 }

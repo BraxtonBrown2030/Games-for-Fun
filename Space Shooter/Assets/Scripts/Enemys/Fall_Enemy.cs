@@ -25,12 +25,16 @@ public class Fall_Enemy : MonoBehaviour
     public Score_Manager _ScoreManager;
     public Wave_Manager wave_Manager;
 
+    public int scoreToGive;
+
     void Start()
     {
         
      playerscript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
      wave_Manager = GameObject.FindGameObjectWithTag("Wave_Manager").GetComponent<Wave_Manager>();
-        
+    
+     _ScoreManager = GameObject.FindGameObjectWithTag("Score_Manager").GetComponent<Score_Manager>(); 
+
     }
 
     void Update()
@@ -85,6 +89,7 @@ public class Fall_Enemy : MonoBehaviour
 
             Destroy(other.gameObject);
             wave_Manager.Killed();
+            _ScoreManager.IncraseScoretect(scoreToGive);
             Destroy(this.gameObject);
 
         }

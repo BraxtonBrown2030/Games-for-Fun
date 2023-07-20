@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.Timeline;
 
 public class Slide_Enemy : MonoBehaviour
@@ -13,10 +14,13 @@ public class Slide_Enemy : MonoBehaviour
     private int _Movespeed = -1;
     private float _Attackspeed = -0.5f;
     private float _LastAttackTime = 1f;
+    public int scoreToGive;
 
     [Header("Scripts")]
     Spawn_Manager spawn_Manager;
     private Player_Controller playerscript;
+    public Score_Manager scoremanager;
+    public Wave_Manager wave_Manager;
 
     [Header("GameObjects")]
     [SerializeField] private GameObject _Lazer;
@@ -25,7 +29,8 @@ public class Slide_Enemy : MonoBehaviour
     {
         
         playerscript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
-
+        scoremanager = GameObject.FindGameObjectWithTag("Score_Manager").GetComponent<Score_Manager>();
+        wave_Manager = GameObject.FindGameObjectWithTag("Wave_Manager").GetComponent<Wave_Manager>();
     }
 
     void Update()
@@ -70,6 +75,8 @@ public class Slide_Enemy : MonoBehaviour
         {
          
             Destroy(other.gameObject);
+            wave_Manager.Killed();
+            scoremanager.IncraseScoretect(scoreToGive);
             Destroy(this.gameObject);
         } 
         

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Top_Enemy : MonoBehaviour
 {
@@ -15,12 +16,19 @@ public class Top_Enemy : MonoBehaviour
     public GameObject _Laser;
     public float _Attackspeed = -1f;
     public float _LastAttackTime = 1f;
+    public Score_Manager scoreManager;
+    public Wave_Manager wave_Manager;
+
+    public int scoreToGive;
 
     void Start()
     {
         
     player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     playerscript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
+    wave_Manager = GameObject.FindGameObjectWithTag("Wave_Manager").GetComponent<Wave_Manager>();
+    scoreManager = GameObject.FindGameObjectWithTag("Score_Manager").GetComponent<Score_Manager>();
+
 
     }
 
@@ -90,6 +98,8 @@ public class Top_Enemy : MonoBehaviour
         {
 
             Destroy(other.gameObject);
+            wave_Manager.Killed();
+            scoreManager.IncraseScoretect(scoreToGive);
             Destroy(this.gameObject);
 
         }

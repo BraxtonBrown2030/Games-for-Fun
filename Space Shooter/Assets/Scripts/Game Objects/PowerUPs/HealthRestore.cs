@@ -6,9 +6,11 @@ using UnityEngine;
 public class HealthRestore : MonoBehaviour
 {
 
+    public float movespeed;
+
     void Start()
     {
-        
+    
     }
 
     void Update()
@@ -20,6 +22,8 @@ public class HealthRestore : MonoBehaviour
             Destroy(gameObject);
 
         }
+
+        transform.Translate(Vector3.down * Time.deltaTime * movespeed);
 
 
     }
