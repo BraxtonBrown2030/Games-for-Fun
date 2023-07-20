@@ -51,6 +51,12 @@ public int shotcooldown = 7;
             Attack();
         }
 
+        if(istrippleshot == true)
+        {
+
+            Poweupdown();
+
+        }
         
     }
 
@@ -177,12 +183,8 @@ public int shotcooldown = 7;
     public void Poweupdown()
     {
 
-        if(istrippleshot == true)
-        {
-
-            slider.value = -1.0f;            
-            Debug.Log("countdown start");
-        }
+        slider.maxValue = 7.0f;            
+        Debug.Log("countdown start");
 
     }
 
