@@ -13,6 +13,7 @@ TagManager:
   - Health_Power
   - Speed_Power
   - Pause Menu
+  - Wave_Manager
   layers:
   - Default
   - TransparentFX

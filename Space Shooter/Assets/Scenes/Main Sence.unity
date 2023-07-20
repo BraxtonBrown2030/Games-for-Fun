@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b846a8e8b6b89d745b73f683310fe3b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Health: 3
+  _Health: 100
   _Speed: 5
   attackSpeed: -0.5
   lastAttackTime: 0.3
@@ -2454,6 +2454,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316081229}
   m_CullTransparentMesh: 1
+--- !u!1 &1342230866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342230867}
+  - component: {fileID: 1342230868}
+  m_Layer: 0
+  m_Name: Wave_Manager
+  m_TagString: Wave_Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1342230867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342230866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3095303, y: 4.753586, z: -0.12831306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342230868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342230866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab51ba64ae625354eb9eae395798d7d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wavecount: 0
+  numberskilled: 0
+  currentnumber: 0
 --- !u!1 &1378887311
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,10 +4207,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7952685796279378607, guid: 828848a42e0a978438e138da04a5331f, type: 3}
-      propertyPath: _LaserSpeed
-      value: 6
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 828848a42e0a978438e138da04a5331f, type: 3}
 --- !u!1001 &1495235191299655698
@@ -4286,10 +4328,6 @@ PrefabInstance:
     - target: {fileID: 2234266866617771003, guid: 50200ed355d71cc4aabd9d72d8caf0b1, type: 3}
       propertyPath: m_Name
       value: Laser_Slide
-      objectReference: {fileID: 0}
-    - target: {fileID: 7147607548941501955, guid: 50200ed355d71cc4aabd9d72d8caf0b1, type: 3}
-      propertyPath: _LaserSpeed
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50200ed355d71cc4aabd9d72d8caf0b1, type: 3}
@@ -4458,6 +4496,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4162495394070062341, guid: d7db2beceeacb0943bf5ed496f49b5c6, type: 3}
+      propertyPath: wave_Manager
+      value: 
+      objectReference: {fileID: 1342230868}
     - target: {fileID: 4162495394070062366, guid: d7db2beceeacb0943bf5ed496f49b5c6, type: 3}
       propertyPath: m_Name
       value: Enemy_Fall

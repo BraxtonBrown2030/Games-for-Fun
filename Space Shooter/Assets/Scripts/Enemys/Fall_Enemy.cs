@@ -23,12 +23,14 @@ public class Fall_Enemy : MonoBehaviour
     public GameObject _TopEnemy;
     private Player_Controller playerscript;
     public Score_Manager _ScoreManager;
+    public Wave_Manager wave_Manager;
 
     void Start()
     {
         
      playerscript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
-
+     wave_Manager = GameObject.FindGameObjectWithTag("Wave_Manager").GetComponent<Wave_Manager>();
+        
     }
 
     void Update()
@@ -82,6 +84,7 @@ public class Fall_Enemy : MonoBehaviour
         {
 
             Destroy(other.gameObject);
+            wave_Manager.Killed();
             Destroy(this.gameObject);
 
         }
