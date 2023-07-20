@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class HealthRestore : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public GameObject[] store_powerups;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+        if(transform.position.y <= 6.5 && transform.position.x <= -10)
+        {
+            int powerups = Random.Range(0,store_powerups.Length);
+
+            transform.position = new Vector3 store_powerups[powerups];
+
+        }
+
+
     }
 }

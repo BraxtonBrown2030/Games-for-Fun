@@ -38,7 +38,8 @@ private Player_Controller _Player;
             {
                 int powerIndex = Random.Range(0,_Powerups.Length);
 
-                Instantiate(_Powerups[powerIndex], new Vector3(Random.Range(-9.5f ,10f), 8, 0), Quaternion.identity);
+                _SpawnTimer = Time.time + _SpawnSpeed;
+                Instantiate(_Powerups[powerIndex], new Vector3(Random.Range(-9.5f ,10f), 8, 0), _Powerups[powerIndex].transform.rotation);
 
             }
             else
