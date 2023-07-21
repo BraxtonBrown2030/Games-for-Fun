@@ -17,18 +17,21 @@ public class Player_H_bar : MonoBehaviour
     {
 
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
+
+        healthSlide.maxValue = 10;
+        healthSlide.minValue = 0;
         
     }
 
     void Update()
     {
-        
+        UpdateHealthAmount();
     }
 
     public void UpdateHealthAmount()
     {
 
-        healthSlide.maxValue = player._Health;
+        healthSlide.value = player._Health;
         
     }
 }
