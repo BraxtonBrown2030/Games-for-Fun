@@ -8,7 +8,7 @@ public class Spawn_Manager : MonoBehaviour
     [Header("Spawn Settings")]
     [SerializeField] private float _SpawnTimer = 1f;
     [SerializeField] private float _SpawnSpeed = 1f;
-    [SerializeField] private float topSpawnSpeed = 10;
+    [SerializeField] private float topSpawnSpeed = 10f;
 
     [Header("Game Objects")]
     [SerializeField] private GameObject _FallEnemy;
@@ -49,10 +49,10 @@ public class Spawn_Manager : MonoBehaviour
 
             Instantiate(_SlideEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
         }
-        if(wave_Manager.numberskilled >= 25 && Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Top_Enemy").Length < maxtop)
+        if(wave_Manager.numberskilled >= 25 && Time.time > _SpawnTimer)
         {
 
-            _SpawnTimer = Time.time + topSpawnSpeed * wave_Manager.waveNumber;
+            _SpawnTimer = Time.time + topSpawnSpeed;
 
             Instantiate(_TopEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
 

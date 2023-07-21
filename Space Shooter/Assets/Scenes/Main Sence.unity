@@ -3571,6 +3571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _SpawnTimer: 1
   _SpawnSpeed: 1
+  topSpawnSpeed: 10
   _FallEnemy: {fileID: 4162495394070062366, guid: d7db2beceeacb0943bf5ed496f49b5c6, type: 3}
   _SlideEnemy: {fileID: 4443764743862327381, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}
   _TopEnemy: {fileID: 1495235191835762096, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
