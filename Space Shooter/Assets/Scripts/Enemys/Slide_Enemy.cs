@@ -13,7 +13,7 @@ public class Slide_Enemy : MonoBehaviour
     [Header("movement / Attacks")]
     private int _Movespeed = -1;
     private float _Attackspeed = -0.5f;
-    private float _LastAttackTime = 2f;
+    private float _LastAttackTime = 3f;
     public int scoreToGive;
 
     [Header("Scripts")]

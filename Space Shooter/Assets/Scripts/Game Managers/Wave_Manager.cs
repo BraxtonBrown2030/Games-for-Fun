@@ -33,7 +33,7 @@ public class Wave_Manager : MonoBehaviour
 
             spawn_Manager.maxNumberOfEmenys = 4;
             spawn_Manager.maxSlide = 2;
-            spawn_Manager.maxtop= 1;
+            spawn_Manager.maxtop= 0;
 
             waveNumber += 1;
 
