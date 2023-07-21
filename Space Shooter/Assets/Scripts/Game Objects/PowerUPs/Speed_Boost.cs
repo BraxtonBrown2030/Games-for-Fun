@@ -5,7 +5,7 @@ using UnityEngine;
 public class Speed_Boost : MonoBehaviour
 {
 
-    public float movepseed;
+    public float moveSpeed;
 
     void Start()
     {
@@ -16,14 +16,14 @@ public class Speed_Boost : MonoBehaviour
     void Update()
     {
         
-        if(transform.position.y <= 6.5)
+         transform.Translate(Vector3.down * Time.deltaTime * moveSpeed);    
+
+        if(transform.position.y <= -6.5)
         {
 
             Destroy(gameObject);
 
         }
-
-        transform.Translate(Vector3.down * Time.deltaTime * movepseed);
 
     }
 }

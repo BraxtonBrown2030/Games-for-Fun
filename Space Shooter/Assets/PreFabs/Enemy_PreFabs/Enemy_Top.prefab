@@ -110,11 +110,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  _StopDistance: 5
-  _Speed: 1
+  _StopDistance: 1
+  _Speed: 10
   _Laser: {fileID: 330365572931792624, guid: 828848a42e0a978438e138da04a5331f, type: 3}
   _Attackspeed: -1
   _LastAttackTime: 1
+  scoreManager: {fileID: 0}
+  wave_Manager: {fileID: 0}
+  scoreToGive: 500
 --- !u!54 &763436952
 Rigidbody:
   m_ObjectHideFlags: 0

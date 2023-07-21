@@ -13,9 +13,12 @@ public class Wave_Manager : MonoBehaviour
     public float waveNumber;
 
     public TextMeshProUGUI waveText;
+    public Spawn_Manager spawn_Manager;
 
     void Start()
     {
+
+        spawn_Manager = GameObject.FindGameObjectWithTag("Spawn_Manager").GetComponent<Spawn_Manager>();
 
         UpdateWaveText();
         wavecount = 1;
@@ -28,6 +31,10 @@ public class Wave_Manager : MonoBehaviour
         if(numberskilled >= 20 && waveNumber == 1)
         {
 
+            spawn_Manager.maxNumberOfEmenys = 4;
+            spawn_Manager.maxSlide = 2;
+            spawn_Manager.maxtop= 1;
+
             waveNumber += 1;
 
             Debug.Log("wave" + waveNumber);
@@ -39,6 +46,10 @@ public class Wave_Manager : MonoBehaviour
             waveNumber += 1;
             Debug.Log("wave" + waveNumber);
 
+            spawn_Manager.maxNumberOfEmenys = 6;
+            spawn_Manager.maxSlide = 4;
+            spawn_Manager.maxtop= 1;
+
         }
         if(numberskilled >= 60 && waveNumber == 3)
         {
@@ -46,16 +57,28 @@ public class Wave_Manager : MonoBehaviour
             waveNumber += 1;
             Debug.Log("wave" + waveNumber);
 
+            spawn_Manager.maxNumberOfEmenys = 8;
+            spawn_Manager.maxSlide = 6;
+            spawn_Manager.maxtop= 1;
+
         }
         if(numberskilled >= 80 && waveNumber == 4)
         {
             Debug.Log("wave" + waveNumber);
             waveNumber += 1;
+
+            spawn_Manager.maxNumberOfEmenys = 10;
+            spawn_Manager.maxSlide = 8;
+            spawn_Manager.maxtop= 1;
         }
         if(numberskilled >= 100 && waveNumber == 5)
         {
             Debug.Log("wave" + waveNumber);
             waveNumber += 1;
+
+            spawn_Manager.maxNumberOfEmenys = 12;
+            spawn_Manager.maxSlide = 10;
+            spawn_Manager.maxtop= 1;
         }
 
 

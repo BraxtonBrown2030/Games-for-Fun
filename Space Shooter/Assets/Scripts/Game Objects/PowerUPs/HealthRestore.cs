@@ -16,14 +16,14 @@ public class HealthRestore : MonoBehaviour
     void Update()
     {
         
-        if(transform.position.y <= 6.5)
+        transform.Translate(Vector3.down * Time.deltaTime * movespeed);
+
+        if(transform.position.y <= -6.5)
         {
 
             Destroy(gameObject);
 
         }
-
-        transform.Translate(Vector3.down * Time.deltaTime * movespeed);
 
 
     }
