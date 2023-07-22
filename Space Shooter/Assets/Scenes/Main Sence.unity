@@ -328,6 +328,7 @@ MonoBehaviour:
   mainSettings: 0
   gameSettings: 0
   settingsCanvas: {fileID: 0}
+  gamePaused: {fileID: 0}
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -1939,7 +1940,7 @@ GameObject:
   - component: {fileID: 904303298}
   m_Layer: 5
   m_Name: Settings
-  m_TagString: Untagged
+  m_TagString: Settings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1995,7 +1996,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 963194227}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2808,6 +2809,7 @@ MonoBehaviour:
   mainSettings: 0
   gameSettings: 0
   settingsCanvas: {fileID: 0}
+  gamePaused: {fileID: 0}
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -2866,6 +2868,7 @@ MonoBehaviour:
   mainSettings: 0
   gameSettings: 0
   settingsCanvas: {fileID: 904303300}
+  gamePaused: {fileID: 0}
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -3102,7 +3105,7 @@ GameObject:
   - component: {fileID: 1400547793}
   m_Layer: 5
   m_Name: Pause Menu
-  m_TagString: Untagged
+  m_TagString: Pause Menu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3853,6 +3856,7 @@ MonoBehaviour:
   mainSettings: 0
   gameSettings: 0
   settingsCanvas: {fileID: 0}
+  gamePaused: {fileID: 0}
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -4231,6 +4235,7 @@ MonoBehaviour:
   mainSettings: 0
   gameSettings: 0
   settingsCanvas: {fileID: 904303300}
+  gamePaused: {fileID: 0}
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -4611,6 +4616,7 @@ MonoBehaviour:
   mainSettings: 0
   gameSettings: 0
   settingsCanvas: {fileID: 0}
+  gamePaused: {fileID: 0}
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
@@ -4782,6 +4788,10 @@ PrefabInstance:
     - target: {fileID: 1495235191835762100, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1495235191835762102, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5584008645877407343, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: scoreManager

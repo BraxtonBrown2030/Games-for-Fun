@@ -13,6 +13,7 @@ public class Main_Menu : MonoBehaviour
     public bool gameSettings = false;
 
     public Canvas settingsCanvas;
+    public Canvas gamePaused;
 
     public int _Gamescene = 1;
     public int _Settings = 2;
@@ -21,7 +22,8 @@ public class Main_Menu : MonoBehaviour
     public void Start()
     {
 
-        settingsCanvas = GetComponent<Canvas>();
+        settingsCanvas = GameObject.FindGameObjectWithTag("Settings").GetComponent<Canvas>();
+        gamePaused = GameObject.FindGameObjectWithTag("Pause Menu").GetComponent<Canvas>();
 
     }
 
@@ -44,8 +46,9 @@ public class Main_Menu : MonoBehaviour
     public void SettingsGame()
     {
 
-
+        
         settingsCanvas.enabled = true;
+        gamePaused.enabled = false;
 
         Debug.Log("Canavas S Enables");
 
@@ -83,6 +86,13 @@ public class Main_Menu : MonoBehaviour
             mainSettings = false;
 
         }      
+
+    }
+
+    public void CloseSettigns()
+    {
+
+        settingsCanvas.enabled = false;
 
     }
 

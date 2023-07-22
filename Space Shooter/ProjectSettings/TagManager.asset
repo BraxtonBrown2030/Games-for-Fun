@@ -16,6 +16,7 @@ TagManager:
   - Wave_Manager
   - Score_Manager
   - Spawn_Manager
+  - Settings
   layers:
   - Default
   - TransparentFX
