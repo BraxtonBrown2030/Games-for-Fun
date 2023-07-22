@@ -23,7 +23,7 @@ public int _Damage;
 [SerializeField] GameObject laser;
 [SerializeField] GameObject tripleShot;
 public GameObject[] _player;
-private bool istrippleshot = false;
+public bool istrippleshot = false;
 [SerializeField]private float tsCooldown = -0.5f;
 [SerializeField]private float lastTSpower = 0.3f;
 
