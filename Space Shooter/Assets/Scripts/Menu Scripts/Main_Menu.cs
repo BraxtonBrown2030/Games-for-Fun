@@ -5,6 +5,7 @@ using TMPro.EditorUtilities;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Main_Menu : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class Main_Menu : MonoBehaviour
     public Canvas settingsCanvas;
     public Canvas gamePaused;
 
+    public Slider VaulumeSettings;
+
+    public float musicSorce;
+
     public int _Gamescene = 1;
     public int _Settings = 2;
     public int _MainMenu = 0;
@@ -24,6 +29,9 @@ public class Main_Menu : MonoBehaviour
 
         settingsCanvas = GameObject.FindGameObjectWithTag("Settings").GetComponent<Canvas>();
         gamePaused = GameObject.FindGameObjectWithTag("Pause Menu").GetComponent<Canvas>();
+
+        
+
 
     }
 
@@ -93,6 +101,7 @@ public class Main_Menu : MonoBehaviour
     {
 
         settingsCanvas.enabled = false;
+        gamePaused.enabled = true;
 
     }
 
