@@ -6,10 +6,12 @@ using UnityEngine;
 public class Pause_menu : MonoBehaviour
 {
     private Player_Controller _Player;
+    public bool paused = false;
+
 
     void Start()
     {
-        
+
         _Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
         
         if(_Player != null)
@@ -30,10 +32,13 @@ public class Pause_menu : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Tab))
         {
             PauseStart();
+            Debug.Log("button pressed");
+
         }
 
+
     }
-    public  void Resume()
+    public void Resume()
     {
 
         Time.timeScale = 1;
@@ -41,6 +46,7 @@ public class Pause_menu : MonoBehaviour
         {
             GetComponent<Canvas>().enabled = false;
         }
+        paused = false;
 
     }
 
@@ -48,8 +54,10 @@ public class Pause_menu : MonoBehaviour
     {
 
         Debug.Log("key imput working");
+        paused = true;
         GetComponent<Canvas>().enabled = true;
         Time.timeScale = 0;
 
     }
+
 }

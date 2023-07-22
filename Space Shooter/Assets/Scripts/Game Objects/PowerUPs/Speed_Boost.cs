@@ -24,6 +24,12 @@ public class Speed_Boost : MonoBehaviour
             Destroy(gameObject);
 
         }
+        if(transform.position.y <= 0)
+        {
+
+            moveSpeed = 0.5f;
+
+        }
 
     }
 }
