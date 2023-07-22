@@ -37,7 +37,7 @@ public class Spawn_Manager : MonoBehaviour
         {
          if (Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Enemy").Length < maxNumberOfEmenys)
         {
-            _SpawnTimer = Time.time + _SpawnSpeed * wave_Manager.waveNumber;
+            _SpawnTimer = Time.time + _SpawnSpeed * wave_Manager.wavecount;
 
             Instantiate(_FallEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
         }
@@ -45,7 +45,7 @@ public class Spawn_Manager : MonoBehaviour
 
          if(Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Slide_enemy").Length < maxSlide)
         {
-            _SpawnTimer = Time.time + _SpawnSpeed * wave_Manager.waveNumber;
+            _SpawnTimer = Time.time + _SpawnSpeed * wave_Manager.wavecount;
 
             Instantiate(_SlideEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
         }

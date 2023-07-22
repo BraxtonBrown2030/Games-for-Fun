@@ -7,11 +7,13 @@ public class Pause_menu : MonoBehaviour
 {
     private Player_Controller _Player;
     public bool paused = false;
+    public float timenumber = 0;
 
 
     void Start()
     {
 
+        
         _Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
         
         if(_Player != null)
@@ -35,6 +37,14 @@ public class Pause_menu : MonoBehaviour
             Debug.Log("button pressed");
 
         }
+        else if(Time.time <= 1 && Input.GetKeyDown(KeyCode.Tab))
+        {
+
+            Resume();
+
+        }
+
+
 
 
     }
@@ -47,6 +57,7 @@ public class Pause_menu : MonoBehaviour
             GetComponent<Canvas>().enabled = false;
         }
         paused = false;
+        timenumber = 0;
 
     }
 
@@ -55,6 +66,7 @@ public class Pause_menu : MonoBehaviour
 
         Debug.Log("key imput working");
         paused = true;
+        timenumber = 1;
         GetComponent<Canvas>().enabled = true;
         Time.timeScale = 0;
 

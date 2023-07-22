@@ -27,7 +27,7 @@ public class Speed_Boost : MonoBehaviour
         if(transform.position.y <= 0)
         {
 
-            moveSpeed = 0.5f;
+            moveSpeed = 1f;
 
         }
 

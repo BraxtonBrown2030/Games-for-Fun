@@ -46,7 +46,7 @@ public class Wave_Manager : MonoBehaviour
         if(numberskilled >= 40 && waveNumber == 1)
         {
 
-            wavecount += 1;
+            wavecount += 2;
             waveNumber += 1;
             Debug.Log("wave" + waveNumber);
             UpdateWaveText();
@@ -58,7 +58,7 @@ public class Wave_Manager : MonoBehaviour
         }
         if(numberskilled >= 60 && waveNumber == 2)
         {
-            wavecount += 1;
+            wavecount += 3;
             waveNumber += 1;
             Debug.Log("wave" + waveNumber);
             UpdateWaveText();
@@ -73,7 +73,7 @@ public class Wave_Manager : MonoBehaviour
             UpdateWaveText();
             Debug.Log("wave" + waveNumber);
             waveNumber += 1;
-            wavecount += 1;
+            wavecount += 4;
 
             spawn_Manager.maxNumberOfEmenys = 10;
             spawn_Manager.maxSlide = 8;
@@ -85,7 +85,7 @@ public class Wave_Manager : MonoBehaviour
             Debug.Log("wave" + waveNumber);
             waveNumber += 1;
 
-            wavecount += 1;
+            wavecount += 5;
 
             spawn_Manager.maxNumberOfEmenys = 12;
             spawn_Manager.maxSlide = 10;

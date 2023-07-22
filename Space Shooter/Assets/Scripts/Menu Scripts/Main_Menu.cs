@@ -12,9 +12,18 @@ public class Main_Menu : MonoBehaviour
     public bool mainSettings = false;
     public bool gameSettings = false;
 
+    public Canvas settingsCanvas;
+
     public int _Gamescene = 1;
     public int _Settings = 2;
     public int _MainMenu = 0;
+
+    public void Start()
+    {
+
+        settingsCanvas = GetComponent<Canvas>();
+
+    }
 
     public void StartGame(int amount)
     {
@@ -35,8 +44,10 @@ public class Main_Menu : MonoBehaviour
     public void SettingsGame()
     {
 
-        SceneManager.LoadScene(_Settings);
-        gameSettings = true;
+
+        settingsCanvas.enabled = true;
+
+        Debug.Log("Canavas S Enables");
 
     }
 
