@@ -35,7 +35,7 @@ public class SettingsSlider : MonoBehaviour
     {
 
         soundslider.value = PlayerPrefs.GetFloat("sound volume");
-        PlayerPrefs.SetFloat("sound volume" = soundslider);
+        
     }
 
     private void Save()

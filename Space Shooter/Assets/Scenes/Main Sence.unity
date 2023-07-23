@@ -839,7 +839,6 @@ GameObject:
   - component: {fileID: 367818932}
   - component: {fileID: 367818931}
   - component: {fileID: 367818930}
-  - component: {fileID: 367818935}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -867,6 +866,7 @@ MonoBehaviour:
   laser: {fileID: 6292433821536431904, guid: c71da2394509be54c8c5e9e767150864, type: 3}
   tripleShot: {fileID: 22682063770789260, guid: 7f4a3ea5fbdfa864a809a32b2bc3c09b, type: 3}
   _player: []
+  istrippleshot: 0
   tsCooldown: -0.5
   lastTSpower: 0.3
   slider: {fileID: 0}
@@ -947,14 +947,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &367818935
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 367818929}
-  m_Enabled: 1
 --- !u!1 &387399129
 GameObject:
   m_ObjectHideFlags: 0
@@ -2392,6 +2384,7 @@ GameObject:
   m_Component:
   - component: {fileID: 908313872}
   - component: {fileID: 908313871}
+  - component: {fileID: 908313873}
   m_Layer: 5
   m_Name: Timer_Bar
   m_TagString: Untagged
@@ -2418,7 +2411,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2449,7 +2442,19 @@ MonoBehaviour:
   m_Value: 7
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 908313870}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &908313872
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2471,6 +2476,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 15.200012}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &908313873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908313870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c692222b6ef30e84592c5924c7c56b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curTimer: 0
+  maxtimer: 0
+  mintimer: 0
+  timerdecrese: 0
+  player: {fileID: 367818930}
+  timeslider: {fileID: 908313871}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,7 +3771,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1554094705}
-  - component: {fileID: 1554094704}
   - component: {fileID: 1554094703}
   m_Layer: 0
   m_Name: Backround music
@@ -3843,7 +3865,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -3853,14 +3875,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!81 &1554094704
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554094702}
-  m_Enabled: 1
 --- !u!4 &1554094705
 Transform:
   m_ObjectHideFlags: 0
