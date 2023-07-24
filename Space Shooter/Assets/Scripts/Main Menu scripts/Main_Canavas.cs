@@ -1,10 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using System;
 
-public class MMCanvas : MonoBehaviour
+public class Main_Canavas : MonoBehaviour
 {
 
     public bool mainSetting;
@@ -25,5 +23,37 @@ public class MMCanvas : MonoBehaviour
     void Update()
     {
         
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+
+            SettingsStartup();
+
+        }
+        
+
+
+    }
+
+    public void SettingsStartup()
+    {
+
+        mmStart.enabled = false;
+        mmSettings.enabled = true;
+
+    }
+
+    public void MainmenuSart()
+    {
+
+        mmSettings.enabled = false;
+        mmStart.enabled = true;
+
+    }
+
+    public void QuitGame()
+    {
+
+        Application.Quit();
+
     }
 }

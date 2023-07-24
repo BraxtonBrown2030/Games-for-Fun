@@ -17,6 +17,8 @@ TagManager:
   - Score_Manager
   - Spawn_Manager
   - Settings
+  - MM Settings
+  - MM Start
   layers:
   - Default
   - TransparentFX
