@@ -269,9 +269,10 @@ GameObject:
   m_Component:
   - component: {fileID: 88151732}
   - component: {fileID: 88151733}
+  - component: {fileID: 88151734}
   m_Layer: 5
   m_Name: V_Slider
-  m_TagString: Untagged
+  m_TagString: Main_V_Save
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -361,6 +362,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &88151734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88151731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f9eec0eb715c774ab763d264aa2a64a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setVolume: {fileID: 116341185}
+  musicslider: {fileID: 88151733}
+  musicvolume: 0
 --- !u!1 &116341184
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +389,7 @@ GameObject:
   - component: {fileID: 116341185}
   m_Layer: 0
   m_Name: Main Menu music
-  m_TagString: Untagged
+  m_TagString: Main_V_Save
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -9,11 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1136de85b253ca74ba32ca66841866aa, type: 3}
-  m_Name: Test switch
+  m_Script: {fileID: 11500000, guid: 5b0153c29d1858447be11c09662899c7, type: 3}
+  m_Name: New SO_V_Save
   m_EditorClassIdentifier: 
-  mainSettings: 0
-  gameSettings: 0
-  _Settings: 2
-  _Gamescene: 1
-  _MainMenu: 0
+  savedMusicVolume: 0
+  main_V_Save: {fileID: 0}
