@@ -24,6 +24,8 @@ public class Main_V_Save : MonoBehaviour
         UpdateMusicVolume();
        // Debug.Log(musicvolume);
 
+       
+
     }
 
     public void UpdateMusicVolume()
@@ -33,5 +35,15 @@ public class Main_V_Save : MonoBehaviour
         PlayerPrefs.SetFloat("music Volume", musicvolume);
         PlayerPrefs.GetFloat("music Volume", musicvolume);
 
+        
+
     }
+
+    public void SetFloat()
+    {
+
+        PlayerPrefs.SetFloat("music Volume", musicvolume);
+
+    }
+
 }
