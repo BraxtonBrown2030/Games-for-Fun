@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
+using Newtonsoft.Json.Converters;
 
 public class Main_Canavas : MonoBehaviour
 {
@@ -54,6 +57,13 @@ public class Main_Canavas : MonoBehaviour
     {
 
         Application.Quit();
+
+    }
+
+    public void StartGame(int amount)
+    {
+
+        SceneManager.LoadScene(amount);
 
     }
 }
