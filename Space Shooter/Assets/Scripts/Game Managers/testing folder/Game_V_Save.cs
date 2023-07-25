@@ -16,12 +16,20 @@ public class Game_V_Save : MonoBehaviour
         
         musicvolumeG = sliderG.value;
 
+        
+
     }
 
     void Update()
     {
-        UpdateMusicVolume();
-        Debug.Log(musicvolumeG);
+
+        if(sliderG.value >= -1)
+        {
+
+            UpdateMusicVolume();
+
+        }
+
 
     }
 

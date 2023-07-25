@@ -110,7 +110,6 @@ public int shotcooldown = 7;
         {
 
          Instantiate(tripleShot, transform.position + new Vector3(0,1.3f,0), Quaternion.identity);
-         
 
         }
 

@@ -28,6 +28,20 @@ public class P_Slider : MonoBehaviour
     void Update()
     {
         
+        UpdateTimerSetttings();
+         if(timeslider.value >= -1)
+        {
+
+            UpdateTimerSetttings();
+
+        }
+
+    }
+
+    public void UpdateTimerSetttings()
+    {
+
+
         if(player.istrippleshot == true)
         {
 

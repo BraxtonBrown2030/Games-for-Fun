@@ -2443,13 +2443,13 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 908313870}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 908313873}
+        m_TargetAssemblyTypeName: P_Slider, Assembly-CSharp
+        m_MethodName: UpdateTimerSetttings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3789,11 +3789,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 20a82e323af01c44a80809c9877dfbd4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4116,8 +4116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa332fc255a31b4e9e8146f262c714d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerslider: {fileID: 908313871}
-  _player: {fileID: 0}
 --- !u!1 &1664830408
 GameObject:
   m_ObjectHideFlags: 0
@@ -4338,6 +4336,7 @@ GameObject:
   - component: {fileID: 1782361910}
   - component: {fileID: 1782361911}
   - component: {fileID: 1782361912}
+  - component: {fileID: 1782361913}
   m_Layer: 5
   m_Name: Vol Slider
   m_TagString: Untagged
@@ -4417,7 +4416,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1554094703}
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: set_volume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1782361912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4439,6 +4450,21 @@ MonoBehaviour:
   _Gamescene: 1
   _Settings: 2
   _MainMenu: 0
+--- !u!114 &1782361913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782361909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26d71736e325eb046abf67016e318893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  setVolumeG: {fileID: 1554094703}
+  sliderG: {fileID: 1782361911}
+  musicvolumeG: 0
 --- !u!1 &1791935324
 GameObject:
   m_ObjectHideFlags: 0
@@ -6107,11 +6133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7755691479392065455, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.45
+      value: 0.29
       objectReference: {fileID: 0}
     - target: {fileID: 7755691479392065455, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.68
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 7755691479392065455, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
       propertyPath: m_LocalPosition.z
