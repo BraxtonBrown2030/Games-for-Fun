@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
@@ -33,10 +34,18 @@ public class Game_V_Save : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+
+        UpdateMusicVolume();
+
+    }
+
     public void UpdateMusicVolume()
     {
 
         musicvolumeG = sliderG.value;
+        PlayerPrefs.Save();
         PlayerPrefs.SetFloat("music Volume", musicvolumeG);
         PlayerPrefs.GetFloat("music Volume", musicvolumeG);
 

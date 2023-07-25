@@ -50,6 +50,7 @@ public class Main_Canavas : MonoBehaviour
 
         mmSettings.enabled = false;
         mmStart.enabled = true;
+        PlayerPrefs.Save();
 
     }
 

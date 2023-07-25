@@ -28,10 +28,19 @@ public class Main_V_Save : MonoBehaviour
 
     }
 
+    private void Awake()
+    {
+
+        UpdateMusicVolume();
+
+    }
+
+
     public void UpdateMusicVolume()
     {
 
         musicvolume = musicslider.value;
+        PlayerPrefs.Save();
         PlayerPrefs.SetFloat("music Volume", musicvolume);
         PlayerPrefs.GetFloat("music Volume", musicvolume);
 
