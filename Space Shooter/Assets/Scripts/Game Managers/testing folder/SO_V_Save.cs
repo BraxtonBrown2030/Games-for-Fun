@@ -9,6 +9,8 @@ public class SO_V_Save : ScriptableObject
     
     public float savedMusicVolume;
     public Main_V_Save main_V_Save;
+
+    public float savedhealth;
     
 
     void Start()
@@ -20,6 +22,7 @@ public class SO_V_Save : ScriptableObject
         //Game menu saved vould - Frefence
 
 
+
     }
 
     void Update()
@@ -27,6 +30,8 @@ public class SO_V_Save : ScriptableObject
         
         savedMusicVolume = main_V_Save.musicvolume;
         Debug.Log("SO_V: " + savedMusicVolume);
+
+        savedhealth = PlayerPrefs.GetFloat("music volume"); 
 
     }
 }

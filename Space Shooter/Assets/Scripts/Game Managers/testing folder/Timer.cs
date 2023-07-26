@@ -10,12 +10,12 @@ public class Timer : MonoBehaviour
     public Slider timerSlider;
     public float  gameTime;
 
-    private bool stopTimer;
+    
 
     void Start()
     {
         
-        stopTimer = false;
+        
         timerSlider.maxValue = 7;
         timerSlider.value = gameTime;
 
@@ -33,7 +33,7 @@ public class Timer : MonoBehaviour
         if(time <= 0)
         {
 
-            stopTimer = true;
+           
 
         }
 
