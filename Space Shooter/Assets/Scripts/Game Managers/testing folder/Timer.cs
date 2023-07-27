@@ -26,6 +26,27 @@ public class Timer : MonoBehaviour
     void Update()
     {
         
+
+        if(stoptimer == false)
+        {
+            this.gameObject.SetActive(true);
+            StartCountDown();
+
+        }
+        if(stoptimer == true)
+        {
+
+            this.gameObject.SetActive(false);
+            timerSlider.value = 7;
+
+        }
+
+
+    }
+
+    public void StartCountDown()
+    {
+
         float time = gameTime - Time.time;
         
 
@@ -37,7 +58,7 @@ public class Timer : MonoBehaviour
         }
         if(stoptimer == false)
         {
-
+            
             timerSlider.value = time;
 
         }

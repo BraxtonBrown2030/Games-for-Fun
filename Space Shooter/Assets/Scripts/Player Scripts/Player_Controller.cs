@@ -29,6 +29,7 @@ public bool istrippleshot = false;
 
 
 public Slider slider;
+public Timer pTimer;
 
 
 public int shotcooldown = 7;
@@ -37,7 +38,7 @@ public int shotcooldown = 7;
     void Start()
     {
         
-
+        pTimer = GameObject.FindGameObjectWithTag("Power Timer").GetComponent<Timer>();
 
     }
 
@@ -132,6 +133,7 @@ public int shotcooldown = 7;
             tsCooldown = Time.time + lastTSpower;
             istrippleshot = true;
             StartCoroutine(TripleShotCooldownRun());
+            pTimer.StartCountDown();
             Destroy(other.gameObject);
             
 
@@ -149,6 +151,7 @@ public int shotcooldown = 7;
 
             _Speed = 7;
             StartCoroutine(SpeedPowerActive());
+            pTimer.StartCountDown();
             Destroy(other.gameObject);
 
         }

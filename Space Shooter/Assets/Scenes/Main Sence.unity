@@ -870,6 +870,7 @@ MonoBehaviour:
   tsCooldown: -0.5
   lastTSpower: 0.3
   slider: {fileID: 0}
+  pTimer: {fileID: 0}
   shotcooldown: 7
 --- !u!65 &367818931
 BoxCollider:
@@ -2388,7 +2389,7 @@ GameObject:
   - component: {fileID: 908313874}
   m_Layer: 5
   m_Name: Timer_Bar
-  m_TagString: Untagged
+  m_TagString: Power Timer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

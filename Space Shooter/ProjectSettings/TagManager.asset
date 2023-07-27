@@ -20,6 +20,7 @@ TagManager:
   - MM Settings
   - MM Start
   - Main_V_Save
+  - Power Timer
   layers:
   - Default
   - TransparentFX
