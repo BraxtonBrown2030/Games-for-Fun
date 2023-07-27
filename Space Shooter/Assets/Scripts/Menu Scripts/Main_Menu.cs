@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
+using TMPro;
 using TMPro.EditorUtilities;
 using UnityEditor.SearchService;
 using UnityEngine;
@@ -15,10 +16,12 @@ public class Main_Menu : MonoBehaviour
 
     public Canvas settingsCanvas;
     public Canvas gamePaused;
+    public Canvas deathmenu;
 
     public Slider VaulumeSettings;
 
     public float musicSorce;
+    public bool lastMenuOpen;
 
     public int _Gamescene = 1;
     public int _Settings = 2;
@@ -29,6 +32,7 @@ public class Main_Menu : MonoBehaviour
 
         settingsCanvas = GameObject.FindGameObjectWithTag("Settings").GetComponent<Canvas>();
         gamePaused = GameObject.FindGameObjectWithTag("Pause Menu").GetComponent<Canvas>();
+        deathmenu = GameObject.FindGameObjectWithTag("Death Menu").GetComponent<Canvas>();
 
         
 
@@ -54,7 +58,7 @@ public class Main_Menu : MonoBehaviour
     public void SettingsGame()
     {
 
-        
+        lastMenuOpen = true;
         settingsCanvas.enabled = true;
         gamePaused.enabled = false;
 
@@ -65,8 +69,9 @@ public class Main_Menu : MonoBehaviour
     public void SettignsMain()
     {
 
-        SceneManager.LoadScene(_Settings);
-        mainSettings = true;
+        lastMenuOpen = false;
+       settingsCanvas.enabled = true;
+       deathmenu.enabled = false;
 
     }
 
@@ -100,8 +105,21 @@ public class Main_Menu : MonoBehaviour
     public void CloseSettigns()
     {
 
-        settingsCanvas.enabled = false;
-        gamePaused.enabled = true;
+        if(lastMenuOpen == true)
+        {
+
+         settingsCanvas.enabled = false;
+         gamePaused.enabled = true;
+
+        }
+        if(lastMenuOpen == false)
+        {
+
+         settingsCanvas.enabled = false;
+         deathmenu.enabled = true;
+
+
+        }
 
     }
 
