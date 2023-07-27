@@ -25,7 +25,7 @@ public int _Damage;
 public GameObject[] _player;
 public bool istrippleshot = false;
 [SerializeField]private float tsCooldown = -0.5f;
-[SerializeField]private float lastTSpower = 0.3f;
+[SerializeField]private float lastTSpower = 3f;
 
 
 public Slider slider;
@@ -51,6 +51,7 @@ public int shotcooldown = 7;
             Attack();
         }
         
+        Debug.Log(istrippleshot);
     }
 
     public void TakeDamage()

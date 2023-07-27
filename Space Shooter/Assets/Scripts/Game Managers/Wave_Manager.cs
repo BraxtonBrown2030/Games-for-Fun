@@ -99,7 +99,7 @@ public class Wave_Manager : MonoBehaviour
     {
 
         numberskilled += 1;
-        Debug.Log(numberskilled);
+       // Debug.Log(numberskilled);
         currentnumber = numberskilled;
 
     }

@@ -50,7 +50,6 @@ public class P_Slider : MonoBehaviour
             if(curTimer <= mintimer)
             {
 
-                player.istrippleshot = false;
                 curTimer = maxtimer;
 
             }

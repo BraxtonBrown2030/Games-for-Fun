@@ -9,14 +9,15 @@ public class Timer : MonoBehaviour
     
     public Slider timerSlider;
     public float  gameTime;
+    public bool stoptimer;
 
     
 
     void Start()
     {
         
-        
-        timerSlider.maxValue = 7;
+        stoptimer = false;
+        timerSlider.maxValue = gameTime;
         timerSlider.value = gameTime;
 
     }
@@ -25,15 +26,19 @@ public class Timer : MonoBehaviour
     void Update()
     {
         
-        float time = gameTime -Time.time;
+        float time = gameTime - Time.time;
         
-        int minuets = Mathf.FloorToInt(time/60);
-        int seconds = Mathf.FloorToInt(time - minuets * 60);
 
         if(time <= 0)
         {
 
-           
+            stoptimer = true;
+
+        }
+        if(stoptimer == false)
+        {
+
+            timerSlider.value = time;
 
         }
 

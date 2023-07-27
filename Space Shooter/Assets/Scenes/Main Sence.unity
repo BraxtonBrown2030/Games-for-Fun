@@ -866,7 +866,7 @@ MonoBehaviour:
   laser: {fileID: 6292433821536431904, guid: c71da2394509be54c8c5e9e767150864, type: 3}
   tripleShot: {fileID: 22682063770789260, guid: 7f4a3ea5fbdfa864a809a32b2bc3c09b, type: 3}
   _player: []
-  istrippleshot: 0
+  istrippleshot: 1
   tsCooldown: -0.5
   lastTSpower: 0.3
   slider: {fileID: 0}
@@ -941,7 +941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 367818929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.03, z: -0}
+  m_LocalPosition: {x: 0, y: -0.09, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1307,7 +1307,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 963194227}
-  m_PlaneDistance: 1
+  m_PlaneDistance: 2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2340,7 +2340,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 963194227}
-  m_PlaneDistance: 1
+  m_PlaneDistance: 2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2385,6 +2385,7 @@ GameObject:
   - component: {fileID: 908313872}
   - component: {fileID: 908313871}
   - component: {fileID: 908313873}
+  - component: {fileID: 908313874}
   m_Layer: 5
   m_Name: Timer_Bar
   m_TagString: Untagged
@@ -2483,17 +2484,32 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908313870}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c692222b6ef30e84592c5924c7c56b1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curTimer: 0
+  curTimer: 7
   maxtimer: 0
   mintimer: 0
-  timerdecrese: 0
+  timerdecrese: 1
   player: {fileID: 367818930}
   timeslider: {fileID: 908313871}
+--- !u!114 &908313874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908313870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e67c2a841a33e141ba95a027d2c8a23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerSlider: {fileID: 908313871}
+  gameTime: 7
+  stoptimer: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,7 +3609,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 963194227}
-  m_PlaneDistance: 1
+  m_PlaneDistance: 2
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -4012,7 +4028,6 @@ GameObject:
   - component: {fileID: 1658012043}
   - component: {fileID: 1658012042}
   - component: {fileID: 1658012041}
-  - component: {fileID: 1658012045}
   m_Layer: 5
   m_Name: Player_Display
   m_TagString: Untagged
@@ -4104,18 +4119,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1658012045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658012040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fa332fc255a31b4e9e8146f262c714d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1664830408
 GameObject:
   m_ObjectHideFlags: 0
@@ -6127,6 +6130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 515712939, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
+      propertyPath: player_Controller
+      value: 
+      objectReference: {fileID: 367818930}
     - target: {fileID: 7755691479392065455, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
       propertyPath: m_RootOrder
       value: 14
