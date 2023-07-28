@@ -7,7 +7,7 @@ public class Spawn_Manager : MonoBehaviour
 {
     [Header("Spawn Settings")]
     [SerializeField] private float _SpawnTimer = 1f;
-    [SerializeField] private float _SpawnSpeed = 1f;
+    public float _SpawnSpeed = 1f;
     [SerializeField] private float topSpawnSpeed = 10f;
 
     [Header("Game Objects")]

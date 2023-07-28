@@ -64,6 +64,8 @@ public class Wave_Manager : MonoBehaviour
             Debug.Log("wave" + waveNumber);
             UpdateWaveText();
 
+            spawn_Manager._SpawnSpeed = 0.5f;
+
             spawn_Manager.maxNumberOfEmenys = 8;
             spawn_Manager.maxSlide = 6;
             spawn_Manager.maxtop= 1;
@@ -76,6 +78,8 @@ public class Wave_Manager : MonoBehaviour
             waveNumber += 1;
             wavecount += 4;
 
+            spawn_Manager._SpawnSpeed = 0.3f;
+
             spawn_Manager.maxNumberOfEmenys = 10;
             spawn_Manager.maxSlide = 8;
             spawn_Manager.maxtop= 1;
@@ -85,8 +89,9 @@ public class Wave_Manager : MonoBehaviour
             UpdateWaveText();
             Debug.Log("wave" + waveNumber);
             waveNumber += 1;
-
             wavecount += 5;
+
+            
 
             spawn_Manager.maxNumberOfEmenys = 12;
             spawn_Manager.maxSlide = 10;

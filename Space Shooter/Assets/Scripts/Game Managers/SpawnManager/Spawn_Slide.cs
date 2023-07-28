@@ -10,7 +10,6 @@ public class Spawn_Slide : MonoBehaviour
     private Spawn_Manager spawn_Manager;
     private Wave_Manager wave_Manager;
     [SerializeField] private float _SpawnTimer = 1f;
-    [SerializeField] private float _SpawnSpeed = 1f;
     [SerializeField] private GameObject _SlideEnemy;
     private Player_Controller _Player;
 
@@ -32,7 +31,7 @@ public class Spawn_Slide : MonoBehaviour
         if(Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Slide_enemy").Length < spawn_Manager.maxSlide)
         {
 
-             _SpawnTimer = Time.time + _SpawnSpeed;
+             _SpawnTimer = Time.time + spawn_Manager._SpawnSpeed;
 
             Instantiate(_SlideEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
 

@@ -77,9 +77,9 @@ public int shotcooldown = 7;
         transform.Translate(Vector3.right * horizontalInput * _Speed * Time.deltaTime);
         transform.Translate(Vector3.up * verticalInput * _Speed * Time.deltaTime);
 
-        if(transform.position.y >= 0)
+        if(transform.position.y >= 6)
          {
-             transform.position = new Vector3(transform.position.x,0,0);
+             transform.position = new Vector3(transform.position.x,6,0);
          }
         else if(transform.position.y <= -3.8f)
          {
@@ -149,7 +149,7 @@ public int shotcooldown = 7;
         if(other.tag == "Speed_Power")
         {
 
-            _Speed = 7;
+            _Speed = 5;
             StartCoroutine(SpeedPowerActive());
             pTimer.StartCountDown();
             Destroy(other.gameObject);
