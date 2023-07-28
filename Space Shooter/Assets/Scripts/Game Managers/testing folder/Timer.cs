@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,8 @@ public class Timer : MonoBehaviour
     public Slider timerSlider;
     public float  gameTime;
     public bool stoptimer;
+
+    public float resetTime;
 
     
 
@@ -62,6 +65,13 @@ public class Timer : MonoBehaviour
             timerSlider.value = time;
 
         }
+
+    }
+
+    public void TimerReset()
+    {
+
+        timerSlider.value = 7;
 
     }
 }

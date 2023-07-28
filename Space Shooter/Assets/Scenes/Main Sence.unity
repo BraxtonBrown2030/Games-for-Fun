@@ -2577,6 +2577,7 @@ MonoBehaviour:
   timerSlider: {fileID: 908313871}
   gameTime: 7
   stoptimer: 1
+  resetTime: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
