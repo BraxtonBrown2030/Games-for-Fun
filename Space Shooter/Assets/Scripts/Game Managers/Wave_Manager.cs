@@ -15,6 +15,7 @@ public class Wave_Manager : MonoBehaviour
 
     public TextMeshProUGUI waveText;
     public Spawn_Manager spawn_Manager;
+    public float waveSIncrease;
 
     void Start()
     {

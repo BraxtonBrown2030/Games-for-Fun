@@ -22,7 +22,6 @@ public class Spawn_Slide : MonoBehaviour
         _Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
     }
 
-    // Update is called once per frame
     void Update()
 
     {
@@ -33,7 +32,7 @@ public class Spawn_Slide : MonoBehaviour
         if(Time.time > _SpawnTimer && GameObject.FindGameObjectsWithTag("Slide_enemy").Length < spawn_Manager.maxSlide)
         {
 
-             _SpawnTimer = Time.time + _SpawnSpeed * wave_Manager.wavecount;
+             _SpawnTimer = Time.time + _SpawnSpeed;
 
             Instantiate(_SlideEnemy, new Vector3(Random.Range(-9.5f, 10f), 8, 0), Quaternion.identity);
 

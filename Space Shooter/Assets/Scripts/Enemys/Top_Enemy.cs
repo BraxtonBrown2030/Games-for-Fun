@@ -8,6 +8,7 @@ public class Top_Enemy : MonoBehaviour
 {
     [Header("Health")]
     public float health;
+    [SerializeField] private GameObject healthDrop;
     
     private Transform player;
     private Player_Controller playerscript;
@@ -100,6 +101,7 @@ public class Top_Enemy : MonoBehaviour
             Destroy(other.gameObject);
             wave_Manager.Killed();
             scoreManager.IncraseScoretect(scoreToGive);
+            Instantiate( healthDrop, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
 
         }
