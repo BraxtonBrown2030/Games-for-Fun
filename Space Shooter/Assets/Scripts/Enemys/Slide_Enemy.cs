@@ -101,20 +101,20 @@ public class Slide_Enemy : MonoBehaviour
 
             transform.Translate(Vector3.left * Time.deltaTime * _Movespeed);
             transform.Translate(Vector3.down * Time.deltaTime);
-
+    /*
             if(transform.position.x <= 10f && transform.position.x >= 0f)
             {
              transform.Translate(Vector3.left * Time.deltaTime * _Movespeed);
              transform.Translate(Vector3.down * Time.deltaTime);
             }
-
+    */
         }
 
         else if(transform.position.x <= 10f && transform.position.x >= 0f)
         {
             transform.Translate(Vector3.right * Time.deltaTime * _Movespeed);
             transform.Translate(Vector3.down * Time.deltaTime);
-
+    /*
             if(transform.position.x >= -9.5f && transform.position.x <= 0f)
             {   
 
@@ -122,6 +122,7 @@ public class Slide_Enemy : MonoBehaviour
                 transform.Translate(Vector3.down * Time.deltaTime);
 
             }
+    */
         }
 
     }

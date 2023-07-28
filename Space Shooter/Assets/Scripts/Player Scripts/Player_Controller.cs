@@ -17,8 +17,8 @@ public int _Health = 3;
 public float _Speed;
 
 [Header("Player Combat")]
-[SerializeField] private float attackSpeed = -0.5f;
-[SerializeField] private float lastAttackTime = 0.3f;
+[SerializeField] private float attackSpeed = 1f;
+[SerializeField] private float lastAttackTime = 0.7f;
 public int _Damage;
 [SerializeField] GameObject laser;
 [SerializeField] GameObject tripleShot;

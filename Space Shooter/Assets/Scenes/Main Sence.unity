@@ -892,8 +892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Health: 10
   _Speed: 3
-  attackSpeed: -0.5
-  lastAttackTime: 0.3
+  attackSpeed: -1
+  lastAttackTime: 0.7
   _Damage: 0
   laser: {fileID: 6292433821536431904, guid: c71da2394509be54c8c5e9e767150864, type: 3}
   tripleShot: {fileID: 22682063770789260, guid: 7f4a3ea5fbdfa864a809a32b2bc3c09b, type: 3}
@@ -6025,14 +6025,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1495235191835762102, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5584008645877407343, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
-      propertyPath: healthDrop
-      value: 
-      objectReference: {fileID: 3112327987666319005, guid: 3018bebb2e23de54bb4a4f4cafdc2a38, type: 3}
     - target: {fileID: 5584008645877407343, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: scoreManager
       value: 
