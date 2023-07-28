@@ -24,13 +24,6 @@ public class HealthRestore : MonoBehaviour
             Destroy(gameObject);
 
         }
-         if(transform.position.y <= 0)
-        {
-
-            moveSpeed = 1f;
-
-        }
-
 
     }
 }

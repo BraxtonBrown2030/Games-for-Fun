@@ -234,6 +234,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92391811}
   m_CullTransparentMesh: 1
+--- !u!1 &107314684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 107314685}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &107314685
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107314684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.6231, y: 2.5072937, z: -2.3315501}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &184182878
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,7 +891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Health: 10
-  _Speed: 5
+  _Speed: 3
   attackSpeed: -0.5
   lastAttackTime: 0.3
   _Damage: 0
@@ -1000,7 +1030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2546,7 +2576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerSlider: {fileID: 908313871}
   gameTime: 7
-  stoptimer: 0
+  stoptimer: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3113,7 +3143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slideEnemy: {fileID: 4443764743862327381, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}
   _SpawnTimer: 1
-  _SpawnSpeed: 1
   _SlideEnemy: {fileID: 4443764743862327381, guid: cd319508ac8a9fa4ba50e0d19ee4f194, type: 3}
 --- !u!1 &1160504700
 GameObject:
@@ -5962,7 +5991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1495235191835762100, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.01
+      value: 5.23
       objectReference: {fileID: 0}
     - target: {fileID: 1495235191835762100, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6306,10 +6335,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 515712939, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
-      propertyPath: player_Controller
-      value: 
-      objectReference: {fileID: 367818930}
     - target: {fileID: 7755691479392065455, guid: 06a060330160f0e4d9730702288a7bf5, type: 3}
       propertyPath: m_RootOrder
       value: 14
