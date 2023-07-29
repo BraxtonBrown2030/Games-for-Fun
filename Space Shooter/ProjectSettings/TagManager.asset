@@ -22,6 +22,7 @@ TagManager:
   - Main_V_Save
   - Power Timer
   - Death Menu
+  - Settings_Main
   layers:
   - Default
   - TransparentFX
