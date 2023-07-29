@@ -52,7 +52,7 @@ public int shotcooldown = 7;
             Attack();
         }
         
-        Debug.Log(istrippleshot);
+        //Debug.Log(istrippleshot);
     }
 
     public void TakeDamage()

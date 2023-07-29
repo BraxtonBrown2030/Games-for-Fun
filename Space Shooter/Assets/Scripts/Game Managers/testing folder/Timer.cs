@@ -19,9 +19,9 @@ public class Timer : MonoBehaviour
     void Start()
     {
         
-        stoptimer = true;
+        stoptimer = false;
         timerSlider.maxValue = gameTime;
-        timerSlider.value = gameTime;
+        
 
     }
 
@@ -41,6 +41,7 @@ public class Timer : MonoBehaviour
 
             //this.gameObject.SetActive(false);
             timerSlider.value = 7;
+            TimerReset();
 
         }
 
@@ -72,6 +73,7 @@ public class Timer : MonoBehaviour
     {
 
         timerSlider.value = 7;
+        gameTime = 7;
 
     }
 }
