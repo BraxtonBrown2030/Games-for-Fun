@@ -16,6 +16,7 @@ public class Game_V_Save : MonoBehaviour
     {
         
         musicvolumeG = sliderG.value;
+    
 
         
 
@@ -30,6 +31,9 @@ public class Game_V_Save : MonoBehaviour
             UpdateMusicVolume();
 
         }
+
+
+        
 
 
     }
