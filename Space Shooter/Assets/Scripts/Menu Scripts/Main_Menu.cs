@@ -17,6 +17,7 @@ public class Main_Menu : MonoBehaviour
     public Canvas settingsCanvas;
     public Canvas gamePaused;
     public Canvas deathmenu;
+    public Canvas settingsDeath;
 
     public Slider VaulumeSettings;
 
@@ -120,6 +121,15 @@ public class Main_Menu : MonoBehaviour
 
 
         }
+
+    }
+    
+    public void CloaseSetteingDeath()
+    {
+
+
+        settingsDeath.enabled = false;
+        deathmenu.enabled = true;
 
     }
 

@@ -517,6 +517,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 904303300}
   gamePaused: {fileID: 904303300}
   deathmenu: {fileID: 505355322}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 0}
   musicSorce: 0
   lastMenuOpen: 0
@@ -2136,7 +2137,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505355319}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 963194227}
@@ -2889,6 +2890,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 904303300}
   gamePaused: {fileID: 1400547796}
   deathmenu: {fileID: 505355322}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 0}
   musicSorce: 0
   lastMenuOpen: 0
@@ -3459,6 +3461,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 640673761}
   gamePaused: {fileID: 1400547796}
   deathmenu: {fileID: 505355322}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 0}
   musicSorce: 0
   lastMenuOpen: 0
@@ -5537,6 +5540,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 904303300}
   gamePaused: {fileID: 1400547796}
   deathmenu: {fileID: 505355322}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 0}
   musicSorce: 0
   lastMenuOpen: 0
@@ -5600,6 +5604,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 904303300}
   gamePaused: {fileID: 1400547796}
   deathmenu: {fileID: 505355322}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 0}
   musicSorce: 0
   lastMenuOpen: 0
@@ -5800,7 +5805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11630,6 +11635,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 0}
   gamePaused: {fileID: 0}
   deathmenu: {fileID: 0}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 1782361911}
   musicSorce: 0
   lastMenuOpen: 0
@@ -11802,6 +11808,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 904303300}
   gamePaused: {fileID: 1400547796}
   deathmenu: {fileID: 505355322}
+  settingsDeath: {fileID: 640673761}
   VaulumeSettings: {fileID: 0}
   musicSorce: 0
   lastMenuOpen: 0
@@ -12336,6 +12343,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 0}
   gamePaused: {fileID: 0}
   deathmenu: {fileID: 0}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 1873674981}
   musicSorce: 0
   lastMenuOpen: 0
@@ -12462,6 +12470,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 904303300}
   gamePaused: {fileID: 1400547796}
   deathmenu: {fileID: 505355322}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 0}
   musicSorce: 0
   lastMenuOpen: 0
@@ -13056,6 +13065,7 @@ MonoBehaviour:
   settingsCanvas: {fileID: 904303300}
   gamePaused: {fileID: 1400547796}
   deathmenu: {fileID: 505355322}
+  settingsDeath: {fileID: 0}
   VaulumeSettings: {fileID: 0}
   musicSorce: 0
   lastMenuOpen: 0
