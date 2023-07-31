@@ -45,7 +45,6 @@ public class Timer : MonoBehaviour
 
         }
 
-
     }
 
     public void StartCountDown()
@@ -76,4 +75,6 @@ public class Timer : MonoBehaviour
         gameTime = 7;
 
     }
+
+
 }
