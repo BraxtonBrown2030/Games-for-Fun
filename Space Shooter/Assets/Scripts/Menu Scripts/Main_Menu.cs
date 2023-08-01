@@ -18,6 +18,7 @@ public class Main_Menu : MonoBehaviour
     public Canvas gamePaused;
     public Canvas deathmenu;
     public Canvas settingsDeath;
+    public Canvas settingsCanvasMain;
 
     public Slider VaulumeSettings;
 
@@ -34,9 +35,7 @@ public class Main_Menu : MonoBehaviour
         settingsCanvas = GameObject.FindGameObjectWithTag("Settings").GetComponent<Canvas>();
         gamePaused = GameObject.FindGameObjectWithTag("Pause Menu").GetComponent<Canvas>();
         deathmenu = GameObject.FindGameObjectWithTag("Death Menu").GetComponent<Canvas>();
-
-        
-
+        settingsCanvasMain = GameObject.FindGameObjectWithTag("Settings_Main").GetComponent<Canvas>();
 
     }
 
@@ -71,7 +70,7 @@ public class Main_Menu : MonoBehaviour
     {
 
         lastMenuOpen = false;
-       settingsCanvas.enabled = true;
+       settingsCanvasMain.enabled = true;
        deathmenu.enabled = false;
 
     }
@@ -106,21 +105,8 @@ public class Main_Menu : MonoBehaviour
     public void CloseSettigns()
     {
 
-        if(lastMenuOpen == true)
-        {
-
-         settingsCanvas.enabled = false;
-         gamePaused.enabled = true;
-
-        }
-        if(lastMenuOpen == false)
-        {
-
-         settingsCanvas.enabled = false;
-         deathmenu.enabled = true;
-
-
-        }
+        settingsCanvas.enabled =false;
+        gamePaused.enabled = true;
 
     }
     
@@ -128,7 +114,7 @@ public class Main_Menu : MonoBehaviour
     {
 
 
-        settingsDeath.enabled = false;
+        settingsCanvasMain.enabled = false;
         deathmenu.enabled = true;
 
     }
