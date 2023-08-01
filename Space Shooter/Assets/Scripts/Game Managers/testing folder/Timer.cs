@@ -71,8 +71,7 @@ public class Timer : MonoBehaviour
     public void TimerReset()
     {
 
-        timerSlider.value = 7;
-        gameTime = 7;
+        timerSlider.value = Time.time + gameTime + 7;
 
     }
 
