@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
     {
         
         stoptimer = false;
-        timerSlider.maxValue = gameTime;
+        timerSlider.maxValue = 7;
         
 
     }
@@ -32,17 +32,21 @@ public class Timer : MonoBehaviour
 
         if(stoptimer == false)
         {
-           // this.gameObject.SetActive(true);
+           //this.gameObject.SetActive(true);
             StartCountDown();
 
         }
         if(stoptimer == true)
         {
 
-            //this.gameObject.SetActive(false);
-            timerSlider.value = 7;
             TimerReset();
 
+            
+           // this.gameObject.SetActive(false);
+            /*
+            timerSlider.value = 7;
+            TimerReset();
+            */
         }
 
     }
@@ -71,7 +75,8 @@ public class Timer : MonoBehaviour
     public void TimerReset()
     {
 
-        timerSlider.value = Time.time + gameTime + 7;
+        timerSlider.value = gameTime + 7 - Time.time;
+        //this.gameObject.SetActive(false);
 
     }
 

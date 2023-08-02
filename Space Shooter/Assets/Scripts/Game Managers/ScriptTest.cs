@@ -10,6 +10,8 @@ public class ScriptTest : MonoBehaviour
     void Start()
     {
         
+        timer = GameObject.FindGameObjectWithTag("Power Timer").GetComponent<Timer>();
+
     }
 
  
@@ -20,13 +22,7 @@ public class ScriptTest : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.N))
         {
 
-            Instantiate(timer);
-
-        }
-        if(timer.timerSlider.value == 0)
-        {
-
-            Destroy(timer);
+            timer.TimerReset();
 
         }
 

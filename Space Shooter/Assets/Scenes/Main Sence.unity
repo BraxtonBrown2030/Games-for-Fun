@@ -14279,9 +14279,8 @@ GameObject:
   m_Component:
   - component: {fileID: 908313872}
   - component: {fileID: 908313871}
-  - component: {fileID: 908313873}
   - component: {fileID: 908313874}
-  - component: {fileID: 908313875}
+  - component: {fileID: 908313873}
   m_Layer: 5
   m_Name: Timer_Bar
   m_TagString: Power Timer
@@ -14340,7 +14339,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 908313873}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: P_Slider, Assembly-CSharp
         m_MethodName: UpdateTimerSetttings
         m_Mode: 1
@@ -14380,17 +14379,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908313870}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c692222b6ef30e84592c5924c7c56b1c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e225d19a14ce1442a307a8c60404aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curTimer: 7
-  maxtimer: 0
-  mintimer: 0
-  timerdecrese: 1
-  player: {fileID: 367818930}
-  timeslider: {fileID: 908313871}
+  timerslider: {fileID: 908313871}
+  gameTime: 0
+  startTimer: 1
+  powerUpActive: 0
 --- !u!114 &908313874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14398,7 +14395,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908313870}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e67c2a841a33e141ba95a027d2c8a23, type: 3}
   m_Name: 
@@ -14406,21 +14403,6 @@ MonoBehaviour:
   timerSlider: {fileID: 908313871}
   gameTime: 7
   stoptimer: 0
-  resetTime: 0
---- !u!114 &908313875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 908313870}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b072b68787914245a74efda4f852ca4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerslider: {fileID: 908313871}
-  stopTimer: 0
   resetTime: 0
 --- !u!1 &920286089
 GameObject:
