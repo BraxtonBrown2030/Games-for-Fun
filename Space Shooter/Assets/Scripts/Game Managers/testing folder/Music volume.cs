@@ -11,12 +11,20 @@ public class Musicvolume : ScriptableObject
 {
 
     public float musicVoulumeFD;
+    public SetVoume setVoume;
 
 
     public void UpdateMusic()
     {
 
-        
+        musicVoulumeFD = setVoume.musicvolume;
 
     }
+
+    // set value of float to value of slider 
+    // set value to vaul of music voulme
+
+
+
+
 }
