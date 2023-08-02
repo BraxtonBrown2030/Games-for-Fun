@@ -35384,7 +35384,7 @@ GameObject:
   - component: {fileID: 1554094703}
   m_Layer: 0
   m_Name: Backround music
-  m_TagString: Untagged
+  m_TagString: BackRoundMusic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35398,10 +35398,10 @@ AudioSource:
   m_GameObject: {fileID: 1554094702}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: c973b6ee66c56e64e8d97d60846084f3, type: 2}
   m_audioClip: {fileID: 8300000, guid: 20a82e323af01c44a80809c9877dfbd4, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.11
   m_Pitch: 1
   Loop: 1
   Mute: 0

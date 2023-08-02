@@ -23,6 +23,7 @@ TagManager:
   - Power Timer
   - Death Menu
   - Settings_Main
+  - BackRoundMusic
   layers:
   - Default
   - TransparentFX
