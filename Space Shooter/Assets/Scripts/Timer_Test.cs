@@ -11,6 +11,8 @@ public class Timer_Test : MonoBehaviour
     public bool startTimer;
     public bool powerUpActive;
 
+    public float timerTest;
+
 
     void Start()
     {
@@ -35,6 +37,13 @@ public class Timer_Test : MonoBehaviour
 
         }
 
+        if(timerTest <= 0)
+        {
+
+            timerTest = 7;
+
+        }
+
     }
     public void StartcountDown()
     {
@@ -55,4 +64,13 @@ public class Timer_Test : MonoBehaviour
         timerslider.value = gameTime + 7 - Time.time;
 
     }
+
+    private void OnTriggerStay()
+    {
+
+        timerTest += 1f * Time.deltaTime;
+
+    }
+
+
 }
