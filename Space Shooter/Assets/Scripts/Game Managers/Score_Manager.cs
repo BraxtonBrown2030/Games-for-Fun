@@ -19,7 +19,7 @@ public class Score_Manager : MonoBehaviour
     public void UpdateScoreText()
     {
         
-        scoreText.text = "Score: " + score;
+        scoreText.text = "" + score;
 
     }
 
