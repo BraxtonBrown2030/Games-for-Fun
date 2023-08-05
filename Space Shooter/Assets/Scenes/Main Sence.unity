@@ -47063,10 +47063,10 @@ RectTransform:
   m_Father: {fileID: 1658012044}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: -590}
-  m_SizeDelta: {x: -732.02, y: -4.3599854}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -91, y: -598.5}
+  m_SizeDelta: {x: 8, y: -4.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1902183317
 SpriteRenderer:
