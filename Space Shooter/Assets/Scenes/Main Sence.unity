@@ -47058,15 +47058,15 @@ RectTransform:
   m_GameObject: {fileID: 1902183315}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 3850}
-  m_LocalScale: {x: 745.88544, y: 648.0138, z: 423.53842}
+  m_LocalScale: {x: 764.87573, y: 672.444, z: 423.53842}
   m_Children: []
   m_Father: {fileID: 1658012044}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -91, y: -598.5}
-  m_SizeDelta: {x: 8, y: -4.4}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -91, y: -409}
+  m_SizeDelta: {x: 8, y: -4.399994}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1902183317
 SpriteRenderer:
