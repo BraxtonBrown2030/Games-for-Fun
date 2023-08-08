@@ -8,27 +8,35 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     
+    public Slider slider;
     public float timer;
+    public bool countdown;
+    public bool timerStart;
+    public float nextCountDown;
 
-
- private void OnTriggerStay(Collider other)
+ void Start()
  {
 
-    timer += 1f * Time.deltaTime;
+
 
  }
 
-private void Update()
-{
+ private void Update()
+ {
 
-    if(timer <= 0)
+    if(timerStart == true && slider.value >= 0)
+    {
+        timer = countdown ? timer -= Time.deltaTime : timer += Time.deltaTime;
+        slider.value = timer;
+    }
+    else if(timerStart == false && slider.value <= 0)
     {
 
-        timer = 5f;
+        timer = nextCountDown;
 
     }
 
-}
 
+ }
 
 }

@@ -541,7 +541,7 @@ Transform:
   m_LocalScale: {x: 8.614173, y: 6.5893674, z: 3.1247}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &184182878
 GameObject:
@@ -13718,7 +13718,7 @@ Transform:
   - {fileID: 480301673}
   - {fileID: 1076452624}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &815957632
 GameObject:
@@ -14422,9 +14422,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 908313870}
         m_TargetAssemblyTypeName: P_Slider, Assembly-CSharp
-        m_MethodName: UpdateTimerSetttings
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14463,7 +14463,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908313870}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2e225d19a14ce1442a307a8c60404aca, type: 3}
   m_Name: 
@@ -14480,15 +14480,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908313870}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e67c2a841a33e141ba95a027d2c8a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerSlider: {fileID: 908313871}
-  gameTime: 7
-  stoptimer: 0
-  resetTime: 0
+  slider: {fileID: 908313871}
+  timer: 7
+  countdown: 1
+  timerStart: 0
+  nextCountDown: 0
 --- !u!1 &920286089
 GameObject:
   m_ObjectHideFlags: 0
@@ -40571,8 +40572,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 0, y: 3.2}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.000045776367, y: -0.099999905}
+  m_SizeDelta: {x: -5.783, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1658012040
 GameObject:
@@ -40622,7 +40623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -41133,8 +41134,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10.999939, y: -63.11302}
-  m_SizeDelta: {x: 11.5, y: 43.76}
+  m_AnchoredPosition: {x: -8.375, y: -63.113037}
+  m_SizeDelta: {x: 16.75, y: 43.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1735538625
 MonoBehaviour:
@@ -47963,50 +47964,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126509130}
   m_CullTransparentMesh: 1
---- !u!1 &2143054855
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2143054857}
-  - component: {fileID: 2143054856}
-  m_Layer: 0
-  m_Name: Testing Empty
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2143054856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143054855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bc84e2338acc804e9ee5b0961d266d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timer: {fileID: 908313874}
---- !u!4 &2143054857
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2143054855}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.009985074, y: 1.0836735, z: 0.0031177998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 25
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2143489439
 GameObject:
   m_ObjectHideFlags: 0

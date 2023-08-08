@@ -134,7 +134,8 @@ public int shotcooldown = 7;
             tsCooldown = Time.time + lastTSpower;
             istrippleshot = true;
             StartCoroutine(TripleShotCooldownRun());
-            
+            pTimer.timerStart = true;
+            pTimer.nextCountDown = 7;
             Destroy(other.gameObject);
             
 
@@ -152,7 +153,8 @@ public int shotcooldown = 7;
 
             _Speed = 5;
             StartCoroutine(SpeedPowerActive());
-            
+            pTimer.timerStart = true;
+            pTimer.nextCountDown = 5;
             Destroy(other.gameObject);
 
         }
