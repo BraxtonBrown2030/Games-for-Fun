@@ -8,77 +8,27 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     
-    public Slider timerSlider;
-    public float  gameTime;
-    public bool stoptimer;
+    public float timer;
 
-    public float resetTime;
 
-    
+ private void OnTriggerStay(Collider other)
+ {
 
-    void Start()
+    timer += 1f * Time.deltaTime;
+
+ }
+
+private void Update()
+{
+
+    if(timer <= 0)
     {
-        
-        stoptimer = false;
-        timerSlider.maxValue = 7;
-        
+
+        timer = 5f;
 
     }
 
-
-    void Update()
-    {
-        
-
-        if(stoptimer == false)
-        {
-           //this.gameObject.SetActive(true);
-            StartCountDown();
-
-        }
-        if(stoptimer == true)
-        {
-
-            TimerReset();
-
-            
-           // this.gameObject.SetActive(false);
-            /*
-            timerSlider.value = 7;
-            TimerReset();
-            */
-        }
-
-    }
-
-    public void StartCountDown()
-    {
-
-        float time = gameTime - Time.time;
-        
-
-        if(time <= 0)
-        {
-
-            stoptimer = true;
-
-        }
-        if(stoptimer == false)
-        {
-            
-            timerSlider.value = time;
-
-        }
-
-    }
-
-    public void TimerReset()
-    {
-
-        timerSlider.value = gameTime + 7 - Time.time;
-        //this.gameObject.SetActive(false);
-
-    }
+}
 
 
 }
