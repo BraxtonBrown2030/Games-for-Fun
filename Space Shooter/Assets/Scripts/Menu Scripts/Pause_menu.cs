@@ -37,7 +37,7 @@ public class Pause_menu : MonoBehaviour
             Debug.Log("button pressed");
 
         }
-        else if(Time.time <= 1 && Input.GetKeyDown(KeyCode.Tab))
+        else if(Time.timeScale == 1 && Input.GetKeyDown(KeyCode.Tab))
         {
 
             Resume();
@@ -52,10 +52,7 @@ public class Pause_menu : MonoBehaviour
     {
 
         Time.timeScale = 1;
-        if(_Player !=null)
-        {
-            GetComponent<Canvas>().enabled = false;
-        }
+        GetComponent<Canvas>().enabled = false;
         paused = false;
         timenumber = 0;
 
@@ -69,6 +66,15 @@ public class Pause_menu : MonoBehaviour
         timenumber = 1;
         GetComponent<Canvas>().enabled = true;
         Time.timeScale = 0;
+
+    }
+
+    public void CloseMenu()
+    {
+    
+        Time.timeScale = 1;
+        GetComponent<Canvas>().enabled = false;
+
 
     }
 
