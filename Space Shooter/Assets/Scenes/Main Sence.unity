@@ -441,36 +441,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 92391811}
   m_CullTransparentMesh: 1
---- !u!1 &107314684
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 107314685}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &107314685
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 107314684}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6231, y: 2.5072937, z: -2.3315501}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &127048565
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,7 +596,7 @@ Transform:
   m_LocalScale: {x: 8.614173, y: 6.5893674, z: 3.1247}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &184182878
 GameObject:
@@ -13393,7 +13363,7 @@ RectTransform:
   - {fileID: 788423578}
   - {fileID: 1873674978}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -14113,7 +14083,7 @@ Transform:
   - {fileID: 480301673}
   - {fileID: 1076452624}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &815957632
 GameObject:
@@ -20667,7 +20637,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1209692972 stripped
 GameObject:
@@ -25946,6 +25916,10 @@ PrefabInstance:
       propertyPath: powerPopUPS.Array.data[2]
       value: 
       objectReference: {fileID: 1898018289}
+    - target: {fileID: 2973366993602889569, guid: 5d009a4d51b294b4ba73678a8ee46180, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8352610663522304892, guid: 5d009a4d51b294b4ba73678a8ee46180, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -48897,7 +48871,7 @@ PrefabInstance:
     - target: {fileID: 5584008645877407343, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: healthDrop
       value: 
-      objectReference: {fileID: 1216088028}
+      objectReference: {fileID: 3112327987666319005, guid: 3018bebb2e23de54bb4a4f4cafdc2a38, type: 3}
     - target: {fileID: 5584008645877407343, guid: 695826bd5a239f842b4a3cf88d2c9703, type: 3}
       propertyPath: scoreManager
       value: 

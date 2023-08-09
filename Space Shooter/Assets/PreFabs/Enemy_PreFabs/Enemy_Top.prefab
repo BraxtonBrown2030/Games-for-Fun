@@ -110,7 +110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  healthDrop: {fileID: 0}
+  healthDrop: {fileID: 8558286660477225035, guid: 5d009a4d51b294b4ba73678a8ee46180, type: 3}
   _StopDistance: 1
   _Speed: 10
   _Laser: {fileID: 330365572931792624, guid: 828848a42e0a978438e138da04a5331f, type: 3}

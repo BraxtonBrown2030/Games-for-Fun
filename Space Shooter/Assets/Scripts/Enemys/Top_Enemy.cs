@@ -98,10 +98,10 @@ public class Top_Enemy : MonoBehaviour
         if(other.tag == "Laser")
         {
 
+            Instantiate( healthDrop, transform.position, Quaternion.identity);
             Destroy(other.gameObject);
             wave_Manager.Killed();
             scoreManager.IncraseScoretect(scoreToGive);
-            Instantiate( healthDrop, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
 
         }
