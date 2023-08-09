@@ -24,6 +24,8 @@ TagManager:
   - Death Menu
   - Settings_Main
   - BackRoundMusic
+  - PopUP
+  - PopUpPowers
   layers:
   - Default
   - TransparentFX
