@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: -2828131303223652134}
   m_Layer: 0
   m_Name: PopUpPower
-  m_TagString: PopUpPowers
+  m_TagString: PopUpSpeed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCanavas: 0
+  powerPopUPS:
+  - {fileID: 6916729224416617670}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &7154764266397081845
 GameObject:
   m_ObjectHideFlags: 0

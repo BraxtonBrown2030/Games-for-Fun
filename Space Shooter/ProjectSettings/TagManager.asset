@@ -26,6 +26,8 @@ TagManager:
   - BackRoundMusic
   - PopUP
   - PopUpPowers
+  - PopUpSpeed
+  - PopUpTShot
   layers:
   - Default
   - TransparentFX

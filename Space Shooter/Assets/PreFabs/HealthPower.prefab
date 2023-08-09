@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1673183999905986607}
   m_Layer: 0
   m_Name: HealthPower
-  m_TagString: Untagged
+  m_TagString: PopUpPowers
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +96,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCanavas: 0
+  powerPopUPS:
+  - {fileID: 8558286660477225035}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &6564682363367704849
 PrefabInstance:
   m_ObjectHideFlags: 0

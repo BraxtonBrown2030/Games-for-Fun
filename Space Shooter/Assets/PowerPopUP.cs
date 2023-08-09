@@ -1,15 +1,20 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PowerPopUP : MonoBehaviour
 {
 
     public bool isCanavas;
+    public GameObject[] powerPopUPS;
 
     void Start()
     {
       isCanavas = GameObject.FindGameObjectWithTag("PopUP").GetComponent<Canvas>().enabled;
+    
+
     }
 
     void Update()
@@ -18,11 +23,11 @@ public class PowerPopUP : MonoBehaviour
         if(isCanavas == false)
         {
 
-            Destroy(gameObject);
+            Destroy(this.gameObject);
+            gameObject.SetActive(false);
 
         }
 
-
-
     }
+
 }

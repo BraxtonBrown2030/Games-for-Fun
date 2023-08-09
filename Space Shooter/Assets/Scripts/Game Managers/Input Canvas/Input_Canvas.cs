@@ -7,13 +7,16 @@ public class Input_Canvas : MonoBehaviour
 
     public Canvas popCanvas;
     public PowerPopUP powerpopUP;
+    public PowerPopUP powerpopUPS;
+    public PowerPopUP powerpopUPT;
 
     void Start()
     {
         Time.timeScale = 0;
         popCanvas.enabled = true;
         powerpopUP = GameObject.FindGameObjectWithTag("PopUpPowers").GetComponent<PowerPopUP>();
-
+        powerpopUPS = GameObject.FindGameObjectWithTag("PopUpSpeed").GetComponent<PowerPopUP>();
+        powerpopUPT = GameObject.FindGameObjectWithTag("PopUpTShot").GetComponent<PowerPopUP>();
     }
 
     public void ClosePopUp()
@@ -22,6 +25,8 @@ public class Input_Canvas : MonoBehaviour
         popCanvas.enabled = false;
         Time.timeScale = 1;
         powerpopUP.isCanavas = false;
+        powerpopUPT.isCanavas = false;
+        powerpopUPS.isCanavas = false;
 
     }
 
@@ -31,12 +36,15 @@ public class Input_Canvas : MonoBehaviour
         popCanvas.enabled = true;
         powerpopUP.isCanavas = true;
 
+
     }
     public void CloseGameMacanicsP()
     {
 
         popCanvas.enabled = false;
         powerpopUP.isCanavas = false;
+        powerpopUPT.isCanavas = false;
+        powerpopUPS.isCanavas = false;
 
     }
 }

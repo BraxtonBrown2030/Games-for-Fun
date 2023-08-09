@@ -17,7 +17,7 @@ public class Timer : MonoBehaviour
  void Start()
  {
 
-
+    timerStart = false;
 
  }
 
@@ -28,11 +28,12 @@ public class Timer : MonoBehaviour
     {
         timer = countdown ? timer -= Time.deltaTime : timer += Time.deltaTime;
         slider.value = timer;
+        timerStart = false;
     }
-    else if(timerStart == false && slider.value <= 0)
+    else if(timerStart == false || slider.value <= 0)
     {
 
-        timer = nextCountDown;
+        slider.value = 7;
 
     }
 

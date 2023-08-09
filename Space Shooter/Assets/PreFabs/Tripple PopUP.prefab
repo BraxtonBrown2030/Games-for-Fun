@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5129797511359994500}
   m_Layer: 0
   m_Name: Tripple PopUP
-  m_TagString: Untagged
+  m_TagString: PopUpTShot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCanavas: 0
+  powerPopUPS: []
 --- !u!1 &1822007134124516146
 GameObject:
   m_ObjectHideFlags: 0
