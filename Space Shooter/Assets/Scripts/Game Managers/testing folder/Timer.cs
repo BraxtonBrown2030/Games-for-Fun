@@ -28,12 +28,19 @@ public class Timer : MonoBehaviour
     {
         timer = countdown ? timer -= Time.deltaTime : timer += Time.deltaTime;
         slider.value = timer;
-        timerStart = false;
+
+        if(timer <= 0)
+        {
+            timerStart = false;
+        }
+        
     }
-    else if(timerStart == false || slider.value <= 0)
+    else if(timerStart == false && slider.value <= 0)
     {
 
+        timer = 7;
         slider.value = 7;
+        slider.maxValue = 7;
 
     }
 

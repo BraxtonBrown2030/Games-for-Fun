@@ -39,13 +39,6 @@ public class Main_Menu : MonoBehaviour
 
     }
 
-    public void StartGame(int amount)
-    {
-
-        SceneManager.LoadScene(amount);
-        Debug.Log("Load working");
-
-    }
 
     public void Quit()
     {

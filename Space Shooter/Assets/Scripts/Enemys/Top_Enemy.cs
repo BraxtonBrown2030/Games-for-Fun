@@ -30,7 +30,6 @@ public class Top_Enemy : MonoBehaviour
     wave_Manager = GameObject.FindGameObjectWithTag("Wave_Manager").GetComponent<Wave_Manager>();
     scoreManager = GameObject.FindGameObjectWithTag("Score_Manager").GetComponent<Score_Manager>();
 
-
     }
 
 
@@ -98,7 +97,7 @@ public class Top_Enemy : MonoBehaviour
         if(other.tag == "Laser")
         {
 
-            Instantiate( healthDrop, transform.position, Quaternion.identity);
+            SpawnDrop();
             Destroy(other.gameObject);
             wave_Manager.Killed();
             scoreManager.IncraseScoretect(scoreToGive);
@@ -106,6 +105,14 @@ public class Top_Enemy : MonoBehaviour
 
         }
 
+
+    }
+
+    private void SpawnDrop()
+    {
+
+        Instantiate( healthDrop, transform.position, Quaternion.identity);
+        Debug.Log("drop working");
 
     }
     
