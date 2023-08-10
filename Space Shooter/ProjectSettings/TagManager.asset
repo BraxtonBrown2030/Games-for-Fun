@@ -28,6 +28,8 @@ TagManager:
   - PopUpPowers
   - PopUpSpeed
   - PopUpTShot
+  - EdgeLeft
+  - EdgeRight
   layers:
   - Default
   - TransparentFX
@@ -64,4 +66,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Menu
+    uniqueID: 862693735
+    locked: 0
+  - name: New Layer
+    uniqueID: 3179936637
     locked: 0

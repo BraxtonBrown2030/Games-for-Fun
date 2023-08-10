@@ -32,7 +32,6 @@ public class Fall_Enemy : MonoBehaviour
         
      playerscript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Controller>();
      wave_Manager = GameObject.FindGameObjectWithTag("Wave_Manager").GetComponent<Wave_Manager>();
-    
      _ScoreManager = GameObject.FindGameObjectWithTag("Score_Manager").GetComponent<Score_Manager>(); 
 
     }

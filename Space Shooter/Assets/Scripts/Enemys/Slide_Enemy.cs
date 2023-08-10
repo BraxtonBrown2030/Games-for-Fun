@@ -16,6 +16,8 @@ public class Slide_Enemy : MonoBehaviour
     private float _LastAttackTime = 3f;
     public int scoreToGive;
 
+    public bool goRight;
+
     [Header("Scripts")]
     Spawn_Manager spawn_Manager;
     private Player_Controller playerscript;
@@ -37,6 +39,7 @@ public class Slide_Enemy : MonoBehaviour
     {
         
         Slide_Movement();
+        SlimeMoveTest();
 
         if(Time.time > _Attackspeed)
         {
@@ -79,12 +82,13 @@ public class Slide_Enemy : MonoBehaviour
             scoremanager.IncraseScoretect(scoreToGive);
             Destroy(this.gameObject);
         } 
+
         
     }
-
+    
     void Slide_Movement()
     {
-
+    /*
         transform.Translate(Vector3.up * Time.deltaTime * _Movespeed);
 
 
@@ -101,20 +105,21 @@ public class Slide_Enemy : MonoBehaviour
 
             transform.Translate(Vector3.left * Time.deltaTime * _Movespeed);
             transform.Translate(Vector3.down * Time.deltaTime);
-    /*
+    
             if(transform.position.x <= 10f && transform.position.x >= 0f)
             {
              transform.Translate(Vector3.left * Time.deltaTime * _Movespeed);
              transform.Translate(Vector3.down * Time.deltaTime);
             }
-    */
+    
         }
-
+    
         else if(transform.position.x <= 10f && transform.position.x >= 0f)
+    
         {
             transform.Translate(Vector3.right * Time.deltaTime * _Movespeed);
             transform.Translate(Vector3.down * Time.deltaTime);
-    /*
+    
             if(transform.position.x >= -9.5f && transform.position.x <= 0f)
             {   
 
@@ -122,8 +127,52 @@ public class Slide_Enemy : MonoBehaviour
                 transform.Translate(Vector3.down * Time.deltaTime);
 
             }
-    */
+    
         }
+    */
+
+    }
+
+    void SlimeMoveTest()
+    {
+
+        transform.Translate(Vector3.up * Time.deltaTime * _Movespeed);
+
+        if(transform.position.y <= -6.5) // reuse spawn that go off screen
+        {
+            float _randomRangeX = Random.Range(-9.5f, 10f);
+
+            transform.position = new Vector3 (_randomRangeX,8,0);
+
+
+            if(goRight == false)
+            {
+                goRight = true;
+            }
+            if(goRight == true)
+            {
+                goRight = false;
+            }
+
+        }
+
+        if(goRight == true)
+        {
+
+         transform.Translate(Vector3.right * Time.deltaTime * _Movespeed);
+         transform.Translate(Vector3.down * Time.deltaTime);            
+
+        }
+        else if(goRight == false)
+        {
+
+            transform.Translate(Vector3.left * Time.deltaTime * _Movespeed);
+            transform.Translate(Vector3.down * Time.deltaTime);
+
+        }
+
+        
+
 
     }
 
@@ -134,4 +183,5 @@ public class Slide_Enemy : MonoBehaviour
         Instantiate(_Lazer, transform.position + new Vector3 (0,-0.8f, 0), Quaternion.identity);
 
     }
+
 }
