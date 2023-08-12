@@ -5,14 +5,16 @@ using UnityEngine;
 public class CubeSpin : MonoBehaviour
 {
     
+    public GameObject pointOfMove;
+
     public float degreesPerSecond = 20;
+    public float floatDistince = 2;
 
     void Start()
     {
-        
+        pointOfMove = GameObject.FindGameObjectWithTag("Click Point").GetComponent<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -23,7 +25,9 @@ public class CubeSpin : MonoBehaviour
 
         }
 
-        transform.Rotate(new Vector3(0, degreesPerSecond, 0) * Time.deltaTime);
+        //transform.Rotate(new Vector3(0, degreesPerSecond, 0) * Time.deltaTime);
+
+        transform.position = Vector3.MoveTowards(transform.position, pointOfMove, floatDistince);
 
     }
 
