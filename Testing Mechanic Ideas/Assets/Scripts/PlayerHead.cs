@@ -33,7 +33,6 @@ public class PlayerHead : MonoBehaviour
 
         }
 
-
     }
 
 }
