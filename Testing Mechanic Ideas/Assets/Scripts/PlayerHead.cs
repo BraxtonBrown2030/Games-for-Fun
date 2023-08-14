@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class PlayerHead : MonoBehaviour
 {
     
+    public GameObject marker;
+    public float speed;
+
     void Start()
     {
         
@@ -14,6 +19,13 @@ public class PlayerHead : MonoBehaviour
     void Update()
     {
         
+        if(marker != null)
+        {
+
+            transform.position = Vector3.MoveTowards(transform.position, marker.transform.position, speed * Time.deltaTime);
+
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,6 +47,8 @@ public class PlayerHead : MonoBehaviour
 
 
         }
+        
+        
 
     }
 

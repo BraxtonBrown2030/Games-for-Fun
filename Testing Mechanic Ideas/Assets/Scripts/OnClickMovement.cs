@@ -4,15 +4,36 @@ using UnityEngine;
 
 public class OnClickMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+    public Camera pcam;
+    public GameObject marker;
+
+
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         
+        if(Input.GetMouseButtonDown(0))
+        {
+
+            Ray myray = pcam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit myraycasthit;
+
+            if(Physics.Raycast(myray, out myraycasthit))
+            {
+
+             //   Instantiate(marker, new Vector3(), Quaternion.identity);
+                            
+
+            }
+
+        }
+
     }
 }
