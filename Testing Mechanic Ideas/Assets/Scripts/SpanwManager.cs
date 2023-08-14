@@ -4,22 +4,37 @@ using UnityEngine;
 
 public class SpanwManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+    public GameObject apple;
+    public GameObject player;
+
+    public float curtime;
+    public float spawnPostion;
+
     void Start()
     {
-        
+
+        apple = GameObject.FindGameObjectWithTag("apple");
+        player = GameObject.FindGameObjectWithTag("Player");
+
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+        if(player != null)
+        {
+
+            Instantiate(apple, new Vector3(0,0,0) , Quaternion.identity);
+            //                              X,Y,Z
+        }
+
     }
 
     public void SpanwTimer()
     {
 
 
-        
+
     }
 }
