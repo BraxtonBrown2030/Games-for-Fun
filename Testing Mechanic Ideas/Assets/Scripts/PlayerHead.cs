@@ -26,10 +26,13 @@ public class PlayerHead : MonoBehaviour
 
         }
         
-        if(other.tag == "Other Wall")
+        if(other.tag == "OuterWall")
         {
 
             //end game / show death screen
+
+            Destroy(this.gameObject);
+
 
         }
 
