@@ -7,12 +7,22 @@ public class OnClickMovement : MonoBehaviour
     
     public Camera pcam;
     public GameObject marker;
+    public GameObject[] makerArray;
 
 
 
     void Start()
     {
         
+
+        /*
+        make mouse spawn point
+        make player move to point 
+        destroy the marker 
+        when player lets go off mouse player stops
+
+
+        */
     }
 
 
