@@ -17,7 +17,6 @@ public class Apple : MonoBehaviour
         spawn = GameObject.FindGameObjectWithTag("SpawnManager").GetComponent<SpanwManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -39,5 +38,11 @@ public class Apple : MonoBehaviour
 
 
     }
+
+    /*
+        instaniate body 
+        change follow script to last section of body
+
+    */
 
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,7 +14,9 @@ public class FollowScript : MonoBehaviour
     public float speed;
     public float stopDistice = 4;
     public PlayerHead playerHead;
-
+    public GameObject pbody;
+    public Transform preObject;
+    int pbodyindex;
 
     void Start()
     {

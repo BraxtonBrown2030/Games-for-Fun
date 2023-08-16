@@ -11,11 +11,13 @@ public class PlayerHead : MonoBehaviour
     public float speed;
     public GameObject[] pBody;
     public bool isHead;
+    public FollowScript followScript;
 
     void Start()
     {
-        
+        isHead = true;
         pBody = GameObject.FindGameObjectsWithTag("Player body");
+        followScript = GameObject.FindGameObjectWithTag("Player body").GetComponent<FollowScript>();
 
     }
 
@@ -51,6 +53,12 @@ public class PlayerHead : MonoBehaviour
             isHead = false;
             
 
+
+        }
+        if(other.tag == "Apple")
+        {
+
+            
 
         }
         
