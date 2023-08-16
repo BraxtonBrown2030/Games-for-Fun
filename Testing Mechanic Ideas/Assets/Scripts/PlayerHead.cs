@@ -10,14 +10,17 @@ public class PlayerHead : MonoBehaviour
     public GameObject marker;
     public float speed;
     public GameObject[] pBody;
+    public GameObject testingBody;
     public bool isHead;
     public FollowScript followScript;
+    public Vector3 spawnPostion;
 
     void Start()
     {
         isHead = true;
         pBody = GameObject.FindGameObjectsWithTag("Player body");
         followScript = GameObject.FindGameObjectWithTag("Player body").GetComponent<FollowScript>();
+        spawnPostion = new Vector3(Random.Range(0,0),1,Random.Range(0,0));
 
     }
 
@@ -58,11 +61,17 @@ public class PlayerHead : MonoBehaviour
         if(other.tag == "Apple")
         {
 
+            Instantiate(testingBody, spawnPostion, Quaternion.identity);
             
-
         }
         
-        
+        /*
+            spawn boay 
+            set unique number 
+            change follow to number
+
+
+        */
 
     }
 
