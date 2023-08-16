@@ -9,10 +9,14 @@ public class PlayerHead : MonoBehaviour
     
     public GameObject marker;
     public float speed;
+    public GameObject[] pBody;
+    public bool isHead;
 
     void Start()
     {
         
+        pBody = GameObject.FindGameObjectsWithTag("Player body");
+
     }
 
 
@@ -44,6 +48,8 @@ public class PlayerHead : MonoBehaviour
             //end game / show death screen
 
             Destroy(this.gameObject);
+            isHead = false;
+            
 
 
         }

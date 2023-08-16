@@ -13,8 +13,8 @@ public class Apple : MonoBehaviour
     void Start()
     {
 
-        score = GameObject.FindGameObjectWithTag("Score Manager").GetComponent<ScoreManager>();
-        spawn = GameObject.FindGameObjectWithTag("Spawn Manager").GetComponent<SpanwManager>();
+        score = GameObject.FindGameObjectWithTag("ScoreManager").GetComponent<ScoreManager>();
+        spawn = GameObject.FindGameObjectWithTag("SpawnManager").GetComponent<SpanwManager>();
     }
 
     // Update is called once per frame

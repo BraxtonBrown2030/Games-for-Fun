@@ -12,11 +12,13 @@ public class FollowScript : MonoBehaviour
     public Transform followObject;
     public float speed;
     public float stopDistice = 4;
+    public PlayerHead playerHead;
 
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        playerHead = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHead>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,13 @@ public class FollowScript : MonoBehaviour
     {
         
         FollowVoidPart();
+
+        if(playerHead.isHead == false)
+        {
+
+            Destroy(gameObject);
+
+        }
         
     }
 
@@ -39,5 +48,7 @@ public class FollowScript : MonoBehaviour
         }
 
     }
+
+
 
 }

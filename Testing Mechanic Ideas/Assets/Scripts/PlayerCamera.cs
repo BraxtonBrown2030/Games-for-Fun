@@ -7,7 +7,7 @@ public class PlayerCamera : MonoBehaviour
 
     public GameObject player;
 
-    private Vector3 offset = new Vector3(0,0,0);
+    private Vector3 offset = new Vector3(0,5,0);
 
 
     void Start()
