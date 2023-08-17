@@ -60,8 +60,8 @@ public class FollowScript : MonoBehaviour
     public void BodyExpand()
     {
 
-        preObject.Add(preObject);
-        preObject.postion = preObject[preObject.Count - 1].position;
+       // preObject.Add(preObject);
+        //preObject.postion = preObject[preObject.Count - 1].position;
 
 
         
