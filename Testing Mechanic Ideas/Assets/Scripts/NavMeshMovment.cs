@@ -15,6 +15,8 @@ public class NavMeshMovment : MonoBehaviour
     public float newSpeed = 5;
     public float changeSpeed;
 
+    public GameObject points;
+
     void Start()
     {
         
@@ -25,7 +27,7 @@ public class NavMeshMovment : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetMouseButton(0))
+        if(Input.GetMouseButtonDown(0))
         {
 
             Ray myRay = playerCamera.ScreenPointToRay(Input.mousePosition);
@@ -34,7 +36,8 @@ public class NavMeshMovment : MonoBehaviour
             if(Physics.Raycast(myRay, out myrayCastHit))
             {
 
-                playerNavMeshAgent.SetDestination(myrayCastHit.point);       
+                Instantiate(points, myrayCastHit.point, Quaternion.identity);
+                
 
             }
 
