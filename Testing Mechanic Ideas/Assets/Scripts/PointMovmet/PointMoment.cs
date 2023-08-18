@@ -7,13 +7,16 @@ public class PointMoment : MonoBehaviour
 
     [Header("Game Objects")]
     public GameObject[] points;
-    public int curPoint;
+    public int curPointPlace;
+    public int curPlayerMove;
 
 
 
     [Header("Sence Objects")]
     public Camera mainCamera;
 
+
+    public float speed;
 
     void Start()
     {
@@ -25,6 +28,7 @@ public class PointMoment : MonoBehaviour
     {
 
         MovePoint();
+
 
     }
 
@@ -41,8 +45,8 @@ public class PointMoment : MonoBehaviour
             if(Physics.Raycast(myRay, out myRayCastHit))
             {
                 
-                points[curPoint].transform.position = myRayCastHit.point;
-                curPoint += 1;
+                points[curPointPlace].transform.position = myRayCastHit.point;
+                curPointPlace += 1;
 
             }
 
@@ -56,10 +60,11 @@ public class PointMoment : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R))
         {
 
-            curPoint = 0;
+            curPointPlace = 0;
 
         }
 
     }
+
 
 }
