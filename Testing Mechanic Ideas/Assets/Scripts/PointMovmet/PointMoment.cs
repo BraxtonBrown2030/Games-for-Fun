@@ -48,14 +48,17 @@ public class PointMoment : MonoBehaviour
 
         }
 
+    }
+    
+    private void ResetPoints()
+    {
+
         if(Input.GetKeyDown(KeyCode.R))
         {
 
-            transform.position = new Vector3 (0,0,0);
-            
+            curPoint = 0;
 
         }
-
 
     }
 
