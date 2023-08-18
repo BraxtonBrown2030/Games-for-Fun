@@ -5,10 +5,9 @@ using UnityEngine;
 public class PlayerPointMovemt : MonoBehaviour
 {
  
-    public GameObject[] points;
     public PointMoment pmovment;
     public GameObject pointsToMove;
-    public float speed;
+    public float speed = 4;
 
 
     void Start()
@@ -28,26 +27,32 @@ public class PlayerPointMovemt : MonoBehaviour
         {
 
             Time.timeScale = 1;
-            Movment();
+
+        }
+
+        if(Time.timeScale == 1)
+        {
+
+            Movement();
 
         }
 
     }
 
-    void Movment()
+    void Movement()
     {
 
-        transform.position = Vector3.MoveTowards(transform.position, points[pmovment.curPlayerMove].transform.position, speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, pmovment.points[pmovment.curPlayerMove].transform.position, speed * Time.deltaTime);
 
     }
 
     public void OnTriggerEnter(Collider other)
     {
 
-        if(other.tag == "MovePoint")
+        if(other.tag == "PlacePoint")
         {
 
-            pmovment.curPointPlace += 1;
+            pmovment.curPlayerMove += 1;
 
         }
 

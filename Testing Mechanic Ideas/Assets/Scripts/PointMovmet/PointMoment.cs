@@ -28,6 +28,7 @@ public class PointMoment : MonoBehaviour
     {
 
         MovePoint();
+        ResetPoints();
 
 
     }
