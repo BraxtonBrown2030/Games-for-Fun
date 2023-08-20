@@ -16,7 +16,6 @@ public class CameraLevelMove : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -27,12 +26,7 @@ public class CameraLevelMove : MonoBehaviour
     public void CameraMove()
     {
 
-        if(levelNumber == 2)
-        {
-
-            transform.position = canemraPos;
-
-        }
+        transform.position = canemraPos;
 
     }
 }

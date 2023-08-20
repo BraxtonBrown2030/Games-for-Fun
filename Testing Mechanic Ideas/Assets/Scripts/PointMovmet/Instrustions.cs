@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Instrustions : MonoBehaviour
 {
+    public Canvas popUPInsturctions;
     
     public TMP_Text placePoints;
     public TMP_Text gameRunning;
@@ -13,11 +14,22 @@ public class Instrustions : MonoBehaviour
     void Start()
     {
         
+        popUPInsturctions.enabled = true;
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void ClosePopUp()
+    {
+
+
+        popUPInsturctions.enabled = false;
+
     }
 }
