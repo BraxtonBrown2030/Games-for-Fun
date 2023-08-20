@@ -37,7 +37,7 @@ public class PointMoment : MonoBehaviour
     {
 
 
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && Time.timeScale == 0)
         {
 
             Ray myRay = mainCamera.ScreenPointToRay(Input.mousePosition);
