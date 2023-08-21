@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 45260141}
   - component: {fileID: 45260140}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Restart:Tab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2310,6 +2310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: febfc16869ba4a94684800c20d1078f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  popUPInsturctions: {fileID: 0}
   placePoints: {fileID: 2104808983}
   gameRunning: {fileID: 1480407790}
 --- !u!4 &2005575951
