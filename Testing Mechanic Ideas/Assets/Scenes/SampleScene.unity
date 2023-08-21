@@ -2462,7 +2462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: febfc16869ba4a94684800c20d1078f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popUPInsturctions: {fileID: 0}
+  popUPInsturctions: {fileID: 1713238077}
   placePoints: {fileID: 2104808983}
   gameRunning: {fileID: 1480407790}
 --- !u!4 &2005575951
