@@ -9,5 +9,6 @@ public class ScriptibleObjctTests : ScriptableObject
 
     public string filename;
     public string attacjvalue;
+    public int coins;
 
 }

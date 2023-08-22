@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: New Scriptible Objct Tests
   m_EditorClassIdentifier: 
   isStart: 0
+  filename: 
+  attacjvalue: 
