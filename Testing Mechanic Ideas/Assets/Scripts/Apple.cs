@@ -10,6 +10,8 @@ public class Apple : MonoBehaviour
 
     [SerializeField] private float degreesPerSecond;
 
+    public ScriptibleObjctTests sOT;
+
     void Start()
     {
 
@@ -21,6 +23,8 @@ public class Apple : MonoBehaviour
     {
         
         transform.Rotate(new Vector3(0, degreesPerSecond, 0) * Time.deltaTime);
+
+        sOT.isStart = false;
 
     }
 

@@ -6,14 +6,8 @@ using UnityEngine;
 public class ScriptibleObjctTests : ScriptableObject
 {
     public bool isStart;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public string filename;
+    public string attacjvalue;
+
 }
