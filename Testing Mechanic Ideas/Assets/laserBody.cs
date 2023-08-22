@@ -6,7 +6,7 @@ public class laserBody : MonoBehaviour
 {
 
     public bool isSwitch;
-    public GameObject laser;
+    //public GameObject laser;
 
     void Start()
     {
@@ -24,14 +24,14 @@ public class laserBody : MonoBehaviour
         if(isSwitch == false)
         {
 
-            laser.SetActive(false);
+            this.gameObject.SetActive(false);
 
         }
 
         if(isSwitch == true)
         {
 
-            laser.SetActive(true);
+            this.gameObject.SetActive(true);
 
         }
 
