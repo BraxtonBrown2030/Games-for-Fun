@@ -12,6 +12,7 @@ public class LevelTriggers : MonoBehaviour
     public Canvas levelComplete;
     public int secneToLoad;
     public SOLevelTrigger soLevelTrigger;
+    [SerializeField] private GameObject plateTrigger;
 
 
     void Start()
@@ -19,6 +20,8 @@ public class LevelTriggers : MonoBehaviour
 
         soLevelTrigger.plateTrigger = false;
         soLevelTrigger.itemGrabed = false;
+
+        plateTrigger = GameObject.FindGameObjectWithTag("Plate");
         
 
     }
@@ -58,6 +61,8 @@ public class LevelTriggers : MonoBehaviour
         if(this.tag == "Plate" && other.tag == "Player")
         {
             soLevelTrigger.plateTrigger = true;
+            plateTrigger.transform.position = new Vector3(0,-3,0);    
+            
         }
 
         if(this.tag == "item" && other.tag == "Player")
