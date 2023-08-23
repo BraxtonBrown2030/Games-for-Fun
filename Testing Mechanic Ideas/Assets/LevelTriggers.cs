@@ -10,6 +10,7 @@ using JetBrains.Annotations;
 public class LevelTriggers : MonoBehaviour
 {
     public Canvas levelComplete;
+    public Canvas levelFailed;
     public int secneToLoad;
     public SOLevelTrigger soLevelTrigger;
     [SerializeField] private GameObject plateTrigger;
@@ -21,8 +22,10 @@ public class LevelTriggers : MonoBehaviour
         soLevelTrigger.plateTrigger = false;
         soLevelTrigger.itemGrabed = false;
 
+        levelFailed.enabled = false;
+        levelComplete.enabled = false;
+
         plateTrigger = GameObject.FindGameObjectWithTag("Plate");
-        
 
     }
 
@@ -69,7 +72,14 @@ public class LevelTriggers : MonoBehaviour
         {
             soLevelTrigger.itemGrabed = true;
         }
+        
+        if(this.tag == "Wall" && other.tag == "Player")
+        {
 
+            Time.timeScale = 0;
+            levelFailed.enabled = true;
+
+        }
 
     }
 
