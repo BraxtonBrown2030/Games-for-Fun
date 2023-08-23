@@ -7,6 +7,7 @@ public class laserBody : MonoBehaviour
 
     public bool isSwitch;
     //public GameObject laser;
+    public Canvas gameEnd;
 
     void Start()
     {
@@ -38,4 +39,20 @@ public class laserBody : MonoBehaviour
 
 
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+
+        if(other.tag == "Player")
+        {
+
+            Time.timeScale = 0;
+            gameEnd.enabled = true;
+            Destroy(other.gameObject);
+
+        }
+
+
+    }
+
 }
