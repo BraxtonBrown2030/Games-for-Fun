@@ -5,6 +5,7 @@ using UnityEditor.SceneManagement;
 using TMPro;
 using UnityEditor.SearchService;
 using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
 
 public class LevelTriggers : MonoBehaviour
 {
@@ -15,13 +16,26 @@ public class LevelTriggers : MonoBehaviour
 
     void Start()
     {
+
+        soLevelTrigger.plateTrigger = false;
+        soLevelTrigger.itemGrabed = false;
         
+
     }
 
     
     void Update()
     {
     
+
+        if(soLevelTrigger.plateTrigger == true && soLevelTrigger.numberReached == true)
+        {
+
+            soLevelTrigger.nextLevel = true;
+
+        }
+
+
 
     }
 
@@ -37,5 +51,22 @@ public class LevelTriggers : MonoBehaviour
 
 
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+
+        if(this.tag == "Plate" && other.tag == "Player")
+        {
+            soLevelTrigger.plateTrigger = true;
+        }
+
+        if(this.tag == "item" && other.tag == "Player")
+        {
+            soLevelTrigger.itemGrabed = true;
+        }
+
+
+    }
+
 
 }
