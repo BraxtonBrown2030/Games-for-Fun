@@ -317,6 +317,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7612813638261073125, guid: 994633ef386e29f449121f568863cb89, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f2c63de4cbdf3648ba28edd5012a974, type: 2}
     - target: {fileID: 7612813638261073127, guid: 994633ef386e29f449121f568863cb89, type: 3}
       propertyPath: m_Name
       value: Points (1)
@@ -732,6 +736,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelComplete: {fileID: 0}
+  levelFailed: {fileID: 0}
   secneToLoad: 0
   soLevelTrigger: {fileID: 11400000, guid: 26b513b580948064383528ce95cfa3a7, type: 2}
   plateTrigger: {fileID: 0}
@@ -1141,6 +1146,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7612813638261073125, guid: 994633ef386e29f449121f568863cb89, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f2c63de4cbdf3648ba28edd5012a974, type: 2}
     - target: {fileID: 7612813638261073127, guid: 994633ef386e29f449121f568863cb89, type: 3}
       propertyPath: m_Icon
       value: 
@@ -1626,6 +1635,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7612813638261073125, guid: 994633ef386e29f449121f568863cb89, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f2c63de4cbdf3648ba28edd5012a974, type: 2}
     - target: {fileID: 7612813638261073127, guid: 994633ef386e29f449121f568863cb89, type: 3}
       propertyPath: m_Name
       value: Points (3)
@@ -2301,6 +2314,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7612813638261073125, guid: 994633ef386e29f449121f568863cb89, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9f2c63de4cbdf3648ba28edd5012a974, type: 2}
     - target: {fileID: 7612813638261073127, guid: 994633ef386e29f449121f568863cb89, type: 3}
       propertyPath: m_Name
       value: Points
